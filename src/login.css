@@ -42,11 +42,7 @@ ul {
 
 .wrapper {
   position: relative;
-  width: 1536px;
-  height: 700px;
   margin: 0 auto;
-  padding: 60px 60px;
-
 }
 
 .logo {
@@ -86,10 +82,12 @@ ul {
 .Login_Box {
   position: absolute;
   align: center;
-  width: 375px;
-  height: 250px;
-  left: 580px;
-  top: 245px;
+  width: 300px;
+  height: 202px;
+  left: 554px;
+  top: 258px;
+  right: 546;
+  bottom: 240;
   border: 2px solid var(--blue-highlight);
   box-sizing: border-box;
   border-radius: 15px;
@@ -97,19 +95,20 @@ ul {
 
 .Login_Box h1 {
   width: 59px;
-  height: 25px;
-  left: 540px;
-  top: 255px;
-  padding: 25px 28px;
+  height: 23px;
+  left: 576px;
+  top: 278px;
+  margin: 20px 22px 15px 22px;
   font-size: 24px;
   line-height: 29px;
   border-top-left-radius: 50px;
 }
 
 .Username_Field {
-  width: 320px;
-  padding: 12px 55px;
-  margin: 28px 25px;
+  width: 256px;
+  height: 32px;
+  padding: 8px 44px 11px 44px;
+  margin: 22px 25px;
   background: var(--light-blue);
   border-radius: 10px;
   text-align:left;
@@ -120,12 +119,14 @@ ul {
   outline: none;
   background: none;
 }
+
 i::before {
   background: transparent;
 }
+
 .Username_Field i {
   float: left;
-  margin-left: -35px;
+  margin-left: -28px;
   text-align: center;
   color: var(--background-purple);
   background: none;
@@ -134,11 +135,13 @@ i::before {
 }
 
 .Password_Field {
-  width: 320px;
-  padding: 12px 55px;
-  margin: 28px 25px;
+  width: 256px;
+  height: 32px;
+  padding: 8px 44px 11px 44px;
+  margin: 22px 25px;
   background: var(--light-blue);
   border-radius: 10px;
+  text-align:left;
 }
 
 .Password_Field input{
@@ -149,7 +152,7 @@ i::before {
 
 .Password_Field i {
   float: left;
-  margin-left: -35px;
+  margin-left: -28px;
   text-align: center;
   color: var(--background-purple);
   background: none;
@@ -162,19 +165,19 @@ i::before {
 }
 
 .Login_Buttons li a {
-  font-size: 16px;
-  line-height: 19px;
+  font-size: 14px;
+  line-height: 9px;
   color: var(--text-white);
 
 }
 
 .forgetMyPassword_Button {
   position: absolute;
-  width: 240px;
-  height: 40px;
-  left: 580px;
-  top: 520px;
-  padding: 7px;
+  width: 170px;
+  height: 32px;
+  left: 554px;
+  top: 480px;
+  padding: 9px;
 
   background: var(--button-highlight);
   border: 3px solid var(--blue-highlight);
@@ -186,11 +189,11 @@ i::before {
 .submit_Button {
   position: absolute;
   text-align: center;
-  padding: 7px;
-  width: 100px;
-  height: 40px;
-  left: 855px;
-  top: 520px;
+  padding: 9px;
+  width: 90px;
+  height: 32px;
+  left: 764px;
+  top: 480px;
 
   background: #2E4D5B;
   border: 3px solid #66FFF6;
@@ -201,15 +204,14 @@ i::before {
 ::placeholder {
   color: var(--background-purple);
   font-family: 'Fira Sans', sans-serif;
-  font-size: 16px;
+  font-size: 14px;
   font-weight: 400;
   background-color: var(--light-blue);
   border-color: var(--light-blue)
 }
 
 .login_line {
-
-    margin: 20px 28px;
-    border: 1.5px solid var(--blue-highlight);
+    margin: 15px 22px 25px 22px;
+    border: 1px solid var(--blue-highlight);
     opacity: 100%;
 }
