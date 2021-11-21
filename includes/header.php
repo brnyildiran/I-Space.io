@@ -1,4 +1,5 @@
 <?php
 
-echo "Test header";
+echo "Test header" . "<br>";
+echo "Secondary test";
 ?>
