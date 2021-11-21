@@ -10,8 +10,8 @@
       <img class="logo" src="images\I-SPACE.io_Transparent.png" alt="logo">
       <nav>
           <ul class="nav_links">
-            <li><a href="register.html">Register</a></li>
-            <li><a href="login.html">Login</a></li>
+            <li><a href="register.php">Register</a></li>
+            <li><a href="login.php">Login</a></li>
           </ul>
       </nav>
     </header>
@@ -29,7 +29,7 @@
         <input type="text" name="" placeholder="Confirm your Password">
         <br>
         <br>
-        <a href="login.html" type="button">Register</a>
+        <a href="login.php" type="button">Register</a>
       </form>
     </div>
 
