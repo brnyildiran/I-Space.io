@@ -11,25 +11,59 @@
 *,
 *::before,
 *::after {
+  margin: 0px;
+  padding: 0px;
   box-sizing: border-box;
-  margin: 0;
-  padding: 0;
   background-color: #1B1227;
-}
-
-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
 }
 
 body {
   font-family: 'Fira Sans', sans-serif;
-
   font-weight: 400;
   font-size: 14px;
   color: #BFCBCD;
   text-decoration: none;
+}
+
+header {
+  display: flex;
+  width: 100%;
+  height: 10vh;
+  margin: auto;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.Container {
+  width: 100%;
+  min-height: 100vh;
+  min-width: 100vw;
+  padding-left: 4%;
+  padding-right: 4%;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+.Logo_Container, .Nav_Links {
+  display: flex;
+}
+
+.Logo_Container{
+  flex: 1;
+  padding-top: 20px;
+}
+
+.Logo_Container img {
+  width: 220px;
+  height: auto;
+  max-width: 100%;
+}
+
+.Nav_Links{
+  flex: 1;
+  justify-content: flex-end;
 }
 
 a {
@@ -40,76 +74,51 @@ ul {
   list-style-type: none;
 }
 
-.wrapper {
-  position: relative;
-  width: 1536px;
-  height: 700px;
-  margin: 0 auto;
-  padding: 60px 60px;
-
-}
-
-.logo {
-  position: absolute;
-  width: 190px;
-  height: 65px;
-  left: 80px;
-  top: 50px;
-}
-
-.nav_links{
-  position: absolute;
-  display: flex;
-  width: 60px;
-  height: 18px;
-  left: 1171px;
-  top: 74px;
-  font-size: 16px;
-  line-height: 19px;
-  text-align: center;
-}
-
-.nav_links li a {
+nav ul li a {
   float:left;
   width: 95px;
-  padding: 10px;
-  margin: 0 15px;
-  left: 1456px;
-  top: 62px;
+  padding: 5px;
+  margin: 0px 10px;
+
   color: var(--text-white);
   border: 3px solid var(--blue-highlight);
-  box-sizing: border-box;
   border-radius: 10px;
   text-align: center;
+  font-size: 14px;
 }
 
-.Login_Box {
-  position: absolute;
-  align: center;
-  width: 375px;
-  height: 250px;
-  left: 580px;
-  top: 245px;
+form{
+  width: 100%
+  height: 80vh;
+  margin: auto;
+
+  width: 300px;
+  height: 202px;
   border: 2px solid var(--blue-highlight);
   box-sizing: border-box;
   border-radius: 15px;
 }
 
+.Login_Box {
+  margin: auto;
+  padding-top: 150px;
+}
+
 .Login_Box h1 {
   width: 59px;
-  height: 25px;
-  left: 540px;
-  top: 255px;
-  padding: 25px 28px;
+  height: 23px;
+  margin: 20px 22px 15px 22px;
   font-size: 24px;
   line-height: 29px;
   border-top-left-radius: 50px;
 }
 
 .Username_Field {
-  width: 320px;
-  padding: 12px 55px;
-  margin: 28px 25px;
+  width: 256px;
+  height: 32px;
+  padding: 5px 44px 15px 44px;
+  margin: 20px 22px;
+  text-align: center;
   background: var(--light-blue);
   border-radius: 10px;
   text-align:left;
@@ -120,12 +129,15 @@ ul {
   outline: none;
   background: none;
 }
+
 i::before {
   background: transparent;
 }
+
 .Username_Field i {
   float: left;
-  margin-left: -35px;
+  margin-left: -28px;
+  margin-top: 3px;
   text-align: center;
   color: var(--background-purple);
   background: none;
@@ -134,11 +146,13 @@ i::before {
 }
 
 .Password_Field {
-  width: 320px;
-  padding: 12px 55px;
-  margin: 28px 25px;
+  width: 256px;
+  height: 32px;
+  padding: 5px 44px 15px 44px;
+  margin: 20px 22px;
   background: var(--light-blue);
   border-radius: 10px;
+  text-align:left;
 }
 
 .Password_Field input{
@@ -149,67 +163,58 @@ i::before {
 
 .Password_Field i {
   float: left;
-  margin-left: -35px;
-  text-align: center;
+  margin-left: -28px;
+  margin-top: 3px;
   color: var(--background-purple);
   background: none;
   outline: none;
   border: none;
 }
 
-.Login_Buttons {
+.Login_Buttons{
+  width: 100%;
   display: flex;
+  margin-top: 45px;
 }
 
 .Login_Buttons li a {
-  font-size: 16px;
-  line-height: 19px;
+  font-size: 14px;
+  line-height: 9px;
   color: var(--text-white);
-
-}
-
-.forgetMyPassword_Button {
-  position: absolute;
-  width: 240px;
-  height: 40px;
-  left: 580px;
-  top: 520px;
-  padding: 7px;
 
   background: var(--button-highlight);
   border: 3px solid var(--blue-highlight);
-  box-sizing: border-box;
   border-radius: 10px;
   text-align: center;
 }
 
-.submit_Button {
-  position: absolute;
-  text-align: center;
-  padding: 7px;
-  width: 100px;
-  height: 40px;
-  left: 855px;
-  top: 520px;
+.forgetMyPassword_Button {
+  width: 200px;
+  height: 32px;
+  padding: 9px;
+  cursor: pointer;
+  margin-left: -34px;
+}
 
-  background: #2E4D5B;
-  border: 3px solid #66FFF6;
-  box-sizing: border-box;
-  border-radius: 10px;
+.submit_Button {
+  width: 85px;
+  height: 32px;
+  padding: 9px;
+  margin-left: 15px;
+  cursor: pointer;
 }
 
 ::placeholder {
   color: var(--background-purple);
   font-family: 'Fira Sans', sans-serif;
-  font-size: 16px;
+  font-size: 14px;
   font-weight: 400;
   background-color: var(--light-blue);
   border-color: var(--light-blue)
 }
 
 .login_line {
-
-    margin: 20px 28px;
-    border: 1.5px solid var(--blue-highlight);
+    margin: 15px 22px 25px 22px;
+    border: 1px solid var(--blue-highlight);
     opacity: 100%;
 }

@@ -20,29 +20,26 @@
 </head>
 
 <body>
-  <div class="wrapper">
+  <div class="Container">
     <header>
-      <div class="logo">
+      <div class="Logo_Container">
         <img src="images/I-SPACE_Logo.png" alt="Logo">
       </div>
-
       <nav>
-        <ul class="nav_links">
+        <ul class="Nav_Links">
           <li><a href="register.html" type="button">Register</a></li>
           <li><a href="login.html">Login</a></li>
         </ul>
       </nav>
     </header>
 
-    <form>
-      <div class="Login_Box">
-
+    <div class="Login_Box">
+      <form>
         <h1>Login</h1>
-
         <hr class="login_line">
 
         <div class="Username_Field">
-          <i class="fa fa-user fa-lg" aria-hidden="true" ></i>
+          <i class="fa fa-user fa-lg" aria-hidden="true"></i>
           <input type="text" placeholder="Username or Email">
         </div>
 
@@ -50,18 +47,15 @@
           <i class="fa fa-lock fa-lg" aria-hidden="true"></i>
           <input type="password" placeholder="Password">
         </div>
-      </div>
 
-      <br>
+        <ul class="Login_Buttons">
+          <li><a class="forgetMyPassword_Button" href="forgetMyPassword.html" type="button">Forget my password</a></li>
+          <li><a class="submit_Button" href="#" type="submit">Submit</a></li>
+        </ul>
+      </form>
+    </div>
 
-      <ul class="Login_Buttons">
-        <div class="forgetMyPassword_Button">
-
-        </div>
-        <li><a class="forgetMyPassword_Button" href="forgetMyPassword.html" type="button">Forget my password</a></li>
-        <li><a class="submit_Button" href="#" type="submit">Submit</a></li>
-      </ul>
-    </form>
   </div>
 </body>
+
 </html>
