@@ -34,7 +34,7 @@ header {
   justify-content: space-between;
 }
 
-.Container {
+.Container_Reg {
   width: 100%;
   min-height: 100vh;
   min-width: 100vw;
@@ -46,22 +46,22 @@ header {
   overflow: hidden;
 }
 
-.Logo_Container, .Nav_Links {
+.Logo_Container_Reg, .Nav_Links_Reg {
   display: flex;
 }
 
-.Logo_Container{
+.Logo_Container_Reg{
   flex: 1;
   padding-top: 20px;
 }
 
-.Logo_Container img {
+.Logo_Container_Reg img {
   width: 220px;
   height: auto;
-  max-width: 100%;
+  max-width: 120%;
 }
 
-.Nav_Links{
+.Nav_Links_Reg{
   flex: 1;
   justify-content: flex-end;
 }
@@ -96,18 +96,37 @@ form{
   margin: auto;
 
   width: 300px;
-  height: 202px;
+  height: 395px;
   border: 2px solid var(--blue-highlight);
   box-sizing: border-box;
   border-radius: 15px;
 }
 
-.Login_Box {
+.Register_Box {
   margin: auto;
-  padding-top: 150px;
+  padding-top: 145px;
 }
 
-.Login_Box h1 {
+.Register_Box h1 {
+  width: 59px;
+  height: 23px;
+  margin: 20px 22px 15px 22px;
+  font-size: 24px;
+  line-height: 29px;
+  border-top-left-radius: 50px;
+}
+.Register_Box h6 {
+  margin: 20px 22px -15px 22px;
+  font-size: 14px;
+}
+
+.Register_Line {
+  margin: 15px 22px 25px 22px;
+  border: 1px solid var(--blue-highlight);
+  opacity: 100%;
+}
+
+.Reg_Username_Field h1 {
   width: 59px;
   height: 23px;
   margin: 20px 22px 15px 22px;
@@ -116,7 +135,10 @@ form{
   border-top-left-radius: 50px;
 }
 
-.Username_Field {
+.Reg_Username_Field,
+.Reg_Email_Field,
+.Reg_Password_Field,
+.Reg_ConfPass_Field {
   width: 256px;
   height: 32px;
   padding: 5px 44px 15px 44px;
@@ -127,7 +149,10 @@ form{
   text-align:left;
 }
 
-.Username_Field input{
+.Reg_Username_Field input,
+.Reg_Email_Field input,
+.Reg_Password_Field input,
+.Reg_ConfPass_Field input{
   border: none;
   outline: none;
   background: none;
@@ -137,50 +162,27 @@ i::before {
   background: transparent;
 }
 
-.Username_Field i {
+.Reg_Username_Field i,
+.Reg_Email_Field i,
+.Reg_Password_Field i,
+.Reg_ConfPass_Field i {
   float: left;
   margin-left: -28px;
   margin-top: 3px;
   text-align: center;
+  background: none;
   color: var(--background-purple);
-  background: none;
   outline: none;
   border: none;
 }
 
-.Password_Field {
-  width: 256px;
-  height: 32px;
-  padding: 5px 44px 15px 44px;
-  margin: 20px 22px;
-  background: var(--light-blue);
-  border-radius: 10px;
-  text-align:left;
-}
-
-.Password_Field input{
-  border: none;
-  outline: none;
-  background: none;
-}
-
-.Password_Field i {
-  float: left;
-  margin-left: -28px;
-  margin-top: 3px;
-  color: var(--background-purple);
-  background: none;
-  outline: none;
-  border: none;
-}
-
-.Login_Buttons{
+.Reg_Button{
   width: 100%;
   display: flex;
-  margin-top: 45px;
+  margin-top: 10px;
 }
 
-.Login_Buttons li a {
+.Reg_Button li a {
   font-size: 14px;
   line-height: 9px;
   color: var(--text-white);
@@ -190,20 +192,11 @@ i::before {
   border-radius: 10px;
   text-align: center;
 }
-
-.forgetMyPassword_Button {
-  width: 200px;
-  height: 32px;
-  padding: 9px;
-  cursor: pointer;
-  margin-left: -34px;
-}
-
-.submit_Button {
+.register_Button {
   width: 85px;
   height: 32px;
   padding: 9px;
-  margin-left: 15px;
+  margin-left: 180px;
   cursor: pointer;
 }
 
@@ -214,10 +207,4 @@ i::before {
   font-weight: 400;
   background-color: var(--light-blue);
   border-color: var(--light-blue)
-}
-
-.login_line {
-    margin: 15px 22px 25px 22px;
-    border: 1px solid var(--blue-highlight);
-    opacity: 100%;
 }
