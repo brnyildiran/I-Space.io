@@ -49,7 +49,7 @@
         </div>
 
         <ul class="Login_Buttons">
-          <li><a class="forgetMyPassword_Button" href="forgetMyPassword.html" type="button">Forget my password</a></li>
+          <li><a class="forgetMyPassword_Button" href="forgetMyPassword.php" type="button">Forget my password</a></li>
           <li><a class="submit_Button" href="#" type="submit">Submit</a></li>
         </ul>
       </form>
