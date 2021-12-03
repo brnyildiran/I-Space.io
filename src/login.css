@@ -34,35 +34,36 @@ header {
   justify-content: space-between;
 }
 
-.Container {
+.Container_Log {
   width: 100%;
   min-height: 100vh;
   min-width: 100vw;
-  padding-left: 4%;
-  padding-right: 4%;
-  padding-top: 30px;
-  padding-bottom: 30px;
+  padding-left: 3.3%;
+  padding-right: 3.7%;
+  padding-top: 28px;
+  padding-bottom: 28px;
   box-sizing: border-box;
   overflow: hidden;
 }
 
-.Logo_Container, .Nav_Links {
+.Logo_Container_Log, .Nav_Links_Log {
   display: flex;
-
 }
 
-.Logo_Container{
+.Logo_Container_Log{
   flex: 1;
-  padding-top: 20px;
+  padding-top: 17px;
 }
 
-.Logo_Container img {
+.Logo_Container_Log img {
   width: 220px;
   height: auto;
-  max-width: 100%;
+  max-width: 120%;
+
+  transform: scale(0.91);
 }
 
-.Nav_Links{
+.Nav_Links_Log {
   flex: 1;
   justify-content: flex-end;
 }
@@ -85,10 +86,13 @@ nav ul li a {
   border-radius: 10px;
   text-align: center;
   font-size: 14px;
+
+  transform: scale(0.91);
 }
 
+
 .RegisterTop {
-  margin-right: 20px;
+  margin-right: 10px;
 }
 
 form{
@@ -105,7 +109,7 @@ form{
 
 .Login_Box {
   margin: auto;
-  padding-top: 150px;
+  padding-top: 10%;
 }
 
 .Login_Box h1 {
@@ -117,7 +121,23 @@ form{
   border-top-left-radius: 50px;
 }
 
-.Username_Field {
+.Login_Line {
+  margin: 15px 22px 25px 22px;
+  border: 1px solid var(--blue-highlight);
+  opacity: 100%;
+}
+
+.Log_Username_Field h1 {
+  width: 59px;
+  height: 23px;
+  margin: 20px 22px 15px 22px;
+  font-size: 24px;
+  line-height: 29px;
+  border-top-left-radius: 50px;
+}
+
+.Log_Username_Field,
+.Log_Password_Field {
   width: 256px;
   height: 32px;
   padding: 5px 44px 15px 44px;
@@ -128,7 +148,8 @@ form{
   text-align:left;
 }
 
-.Username_Field input{
+.Log_Username_Field input,
+.Log_Password_Field input {
   border: none;
   outline: none;
   background: none;
@@ -138,39 +159,14 @@ i::before {
   background: transparent;
 }
 
-.Username_Field i {
+.Log_Username_Field i,
+.Log_Password_Field i {
   float: left;
   margin-left: -28px;
   margin-top: 3px;
   text-align: center;
+  background: none;
   color: var(--background-purple);
-  background: none;
-  outline: none;
-  border: none;
-}
-
-.Password_Field {
-  width: 256px;
-  height: 32px;
-  padding: 5px 44px 15px 44px;
-  margin: 20px 22px;
-  background: var(--light-blue);
-  border-radius: 10px;
-  text-align:left;
-}
-
-.Password_Field input{
-  border: none;
-  outline: none;
-  background: none;
-}
-
-.Password_Field i {
-  float: left;
-  margin-left: -28px;
-  margin-top: 3px;
-  color: var(--background-purple);
-  background: none;
   outline: none;
   border: none;
 }
@@ -191,13 +187,12 @@ i::before {
   border-radius: 10px;
   text-align: center;
 }
-
-.forgetMyPassword_Button {
-  width: 200px;
+.register_Button {
+  width: 85px;
   height: 32px;
   padding: 9px;
+  margin-left: 180px;
   cursor: pointer;
-  margin-left: -34px;
 }
 
 .submit_Button {
@@ -208,6 +203,14 @@ i::before {
   cursor: pointer;
 }
 
+.forgetMyPassword_Button {
+  width: 200px;
+  height: 32px;
+  padding: 9px;
+  cursor: pointer;
+  margin-left: -34px;
+}
+
 ::placeholder {
   color: var(--background-purple);
   font-family: 'Fira Sans', sans-serif;
@@ -215,10 +218,4 @@ i::before {
   font-weight: 400;
   background-color: var(--light-blue);
   border-color: var(--light-blue)
-}
-
-.login_line {
-    margin: 15px 22px 25px 22px;
-    border: 1px solid var(--blue-highlight);
-    opacity: 100%;
 }

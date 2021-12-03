@@ -1,17 +1,10 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-<!-- Head // holds information about the webpage,
-  tells browser how it should handle the page -->
 
 <head>
-  <!-- All the available characters that can be used within this web page
-    utf-8 gives maximum chance for a webpage to render correctly on browsers
-    from international users-->
   <meta charset="utf-8">
-  <meta name="description" content="Create your own Universe! All your favourites and explorations are in one single platform.">
-  <meta name="keywords" content="Movies, TV Series, Music, Books, Artworks">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>I-SPACE.io</title>
+  <title>Register</title>
   <link rel="stylesheet" href="./src/login.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -20,13 +13,14 @@
 </head>
 
 <body>
-  <div class="Container">
+
+  <div class="Container_Log">
     <header>
-      <div class="Logo_Container">
-        <img src="images/I-SPACE_Logo.png" alt="Logo">
+      <div class="Logo_Container_Log">
+        <img class="logo" src="images\I-SPACE_Logo.png" alt="logo">
       </div>
       <nav>
-        <ul class="Nav_Links">
+        <ul class="Nav_Links_Log">
           <li><a class="RegisterTop" href="register.html">Register</a></li>
           <li><a class="LoginTop" href="login.html">Login</a></li>
         </ul>
@@ -36,14 +30,14 @@
     <div class="Login_Box">
       <form>
         <h1>Login</h1>
-        <hr class="login_line">
+        <hr class="Login_Line">
 
-        <div class="Username_Field">
+        <div class="Log_Username_Field">
           <i class="fa fa-user fa-lg" aria-hidden="true"></i>
           <input type="text" placeholder="Username or Email">
         </div>
 
-        <div class="Password_Field">
+        <div class="Log_Password_Field">
           <i class="fa fa-lock fa-lg" aria-hidden="true"></i>
           <input type="password" placeholder="Password">
         </div>
@@ -57,5 +51,4 @@
 
   </div>
 </body>
-
 </html>
