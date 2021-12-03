@@ -40,7 +40,7 @@ header {
   min-height: 100vh;
   min-width: 98.9vw;
   padding-left: 4%;
-  padding-right: 4%;
+  padding-right: 3%;
   padding-top: 30px;
   padding-bottom: 30px;
   box-sizing: border-box;
@@ -57,7 +57,7 @@ header {
 }
 
 .Logo_Container img {
-  width: 190px;
+  width: 220px;
   height: auto;
   max-width: 120%;
   object-fit: contain;
@@ -96,62 +96,216 @@ nav ul a {
 }
 
 
-.Flip_Cards {
+
+
+/* START: Daily Shuffle */
+.Daily_Shuffle h4 {
+  width: 175px;
+  height: 45px;
+  left: 80px;
+  top: 169px;
+
+  border: 2px solid var(--gold);
+  box-sizing: border-box;
+  border-radius: 15px;
+  color: var(--text-white);
+
+  text-align: center;
+  padding-top: 6px;
+}
+
+.Daily_Shuffle .Cards {
   display: flex;
-  justify-content: space-between;
-  position: relative;
+  width: 100%;
+  padding-top: 20px;
+  padding-bottom: 100px;
+  justify-content: flex-start;
+}
+
+/* The flip card container - set the width and height to whatever you want.
+We have added the border property to demonstrate that the flip itself goes out
+of the box on hover (remove perspective if you don't want the 3D effect */
+.Flip_Card_Movie,
+.Flip_Card_TVSerie,
+.Flip_Card_Music,
+.Flip_Card_Book,
+.Flip_Card_Artwork {
+  background-color: transparent;
   width: 135px;
   height: 200px;
-  transition: transform 1s;
+  perspective: 1000px; /* Remove this if you don't want the 3D effect */
+  margin-right: 30px;
+}
+
+/* This container is needed to position the front and back side */
+.Flip_Card_Movie_Inner,
+.Flip_Card_TVSerie_Inner,
+.Flip_Card_Music_Inner,
+.Flip_Card_Book_Inner,
+.Flip_Card_Artwork_Inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
   transform-style: preserve-3d;
 }
 
-.Flip_Cards:hover {
-  transform: rotateY(180deg);
-}
-
-.Flip_Card_Book_Back,
-.Flip_Card_Book_Front,
-.Flip_Card_Movie_Back,
-.Flip_Card_Movie_Front,
-.Flip_Card_TVSerie_Back,
-.Flip_Card_TVSerie_Front,
-.Flip_Card_Music_Back,
-.Flip_Card_Music_Front,
-.Flip_Card_Artwork_Back,
-.Flip_Card_Artwork_Front {
+/* Position the front and back side */
+.Flip_Card_Movie_Front, .Flip_Card_Movie_Back,
+.Flip_Card_TVSerie_Front, .Flip_Card_TVSerie_Back,
+.Flip_Card_Music_Front, .Flip_Card_Music_Back,
+.Flip_Card_Book_Front, .Flip_Card_Book_Back,
+.Flip_Card_Artwork_Front, .Flip_Card_Artwork_Back {
   position: absolute;
   width: 100%;
   height: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 24px;
-}
-
-.Flip_Card_Book_Back,
-.Flip_Card_Movie_Back,
-.Flip_Card_TVSerie_Back,
-.Flip_Card_Music_Back,
-.Flip_Card_Artwork_Back {
-
-  background-color: transparent;
+  -webkit-backface-visibility: hidden; /* Safari */
   backface-visibility: hidden;
-  border: 2px solid var(--gold);
-  transform: rotateY(180deg);
-
 }
 
-.Flip_Card_Book_Front,
+/* Style the front side (fallback if image is missing) */
 .Flip_Card_Movie_Front,
 .Flip_Card_TVSerie_Front,
 .Flip_Card_Music_Front,
+.Flip_Card_Book_Front,
 .Flip_Card_Artwork_Front {
-
-  background: var(--blue-highlight);
+  background: none;
   border: 2px solid var(--gold);
+  border-radius: 10px;
+  font-size: 24px;
+  color: var(--text-white);
 }
 
+.Flip_Card_Movie_Front p,
+.Flip_Card_TVSerie_Front p,
+.Flip_Card_Music_Front p,
+.Flip_Card_Book_Front p,
+.Flip_Card_Artwork_Front p {
+  text-align: left;
+  font-size: 20px;
+  background: none;
+  transform: rotate(-90deg) translate(-18%,0);
+  transform-origin: right bottom;
+  border-radius: 10px;
+}
+
+/* Style the back side */
+.Flip_Card_Movie_Back,
+.Flip_Card_TVSerie_Back,
+.Flip_Card_Music_Back,
+.Flip_Card_Book_Back,
+.Flip_Card_Artwork_Back {
+  border: 2px solid var(--gold);
+  border-radius: 10px;
+  font-size: 24px;
+  color: var(--text-white);
+
+  justify-content: center;
+  align-items: center;
+
+  transform: rotateY(180deg);
+}
+
+.Flip_Card_Movie_Back p,
+.Flip_Card_TVSerie_Back p,
+.Flip_Card_Music_Back p,
+.Flip_Card_Book_Back p,
+.Flip_Card_Artwork_Back p {
+  background: none;
+  border-radius: 10px;
+}
+
+.Flip_Card_Movie_Back {
+  background: #356978;
+}
+
+.Flip_Card_TVSerie_Back {
+  background: #505D8D;
+}
+
+.Flip_Card_Music_Back {
+  background: #3C2971;
+}
+
+.Flip_Card_Book_Back {
+  background: #571F72;
+}
+
+.Flip_Card_Artwork_Back {
+  background: #5F244C;
+}
+
+
+/* END: Daily Shuffle */
+.Your_Statistics table {
+  border-radius: 10px;
+}
+
+table {
+  margin-top: 28px;
+  border-collapse: separate !important;
+  border-spacing: 0;
+  border-radius: 10px;
+  border-style: hidden;
+}
+
+table tr:first-child td:first-child {
+  border-top-left-radius: 10px;
+}
+
+table tr:first-child td:last-child {
+  border-top-right-radius: 10px;
+}
+
+table tr:last-child td:first-child {
+    border-bottom-left-radius: 10px;
+}
+
+table, td {
+  border: 2px solid var(--text-white);
+}
+
+
+
+table i::before {
+  background: transparent;
+}
+
+table i {
+  background: none;
+  color: var(--text-white);
+  outline: none;
+  border: none;
+}
+
+.ShuffleAndStats {
+  display: flex;
+}
+
+.Shuffle {
+  width: 60%;
+}
+
+.Stats {
+  width: 40%;
+  padding-left: 85px;
+}
+
+.Your_Statistics h4 {
+  width: 195px;
+  height: 45px;
+  left: 960px;
+  top: 169px;
+
+  border: 2px solid #FFFFFF;
+  box-sizing: border-box;
+  border-radius: 15px;
+  color: var(--text-white);
+
+  text-align: center;
+  padding-top: 6px;
+}
 
 
 .row_poster {

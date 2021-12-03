@@ -1,4 +1,5 @@
 <html lang="en" dir="ltr">
+
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,6 +9,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Fira+Sans&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.1/font/bootstrap-icons.css">
 </head>
 
 <body>
@@ -31,322 +33,480 @@
     <!-- ---------------------------------------------------------------------------- -->
     <!-- Daily Shuffle Section Start -->
     <div class="Homepage_Container">
-      <div class="Daily_Shuffle">
-        <h4>Daily Shuffle</h4>
-        <div class="Flip_Cards">
-          <div class="Flip_Card_Movie_Front">Movie</div>
-          <div class="Flip_Card_Movie_Back">Le Grand Bleu</div>
+      <section class="ShuffleAndStats">
 
-          <div class="Flip_Card_TVSerie_Front">TV Series</div>
-          <div class="Flip_Card_TVSerie_Back">Mindhunter</div>
+        <section class="Shuffle">
+          <div class="Daily_Shuffle">
+            <h4>Daily Shuffle</h4>
 
-          <div class="Flip_Card_Music_Front">Music</div>
-          <div class="Flip_Card_Music_Back">Adele - Oh My God</div>
+            <div class="Cards">
 
-          <div class="Flip_Card_Book_Front">Book</div>
-          <div class="Flip_Card_Book_Back">Norwegian Wood</div>
+              <div class="Movie_Card">
+                <div class="Flip_Card_Movie">
+                  <div class="Flip_Card_Movie_Inner">
+                    <div class="Flip_Card_Movie_Front">
+                      <p>Movie</p>
+                    </div>
+                    <div class="Flip_Card_Movie_Back">
+                      <p>Le Grand Bleu</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
 
-          <div class="Flip_Card_Artwork_Front">Artwork</div>
-          <div class="Flip_Card_Artwork_Back">Pablo Picasso - Guernica</div>
-        </div>
-      </div>
-      <!-- Daily Shuffle Section End -->
-      <!-- --------------------------------------------------------------------------- -->
-      <!-- Movies Section Start -->
-      <div class="Movies">
-        <h4>Movies</h4>
-        <div class="Featured_Movies_Row">
-          <h5>Featured Movies</h5>
-          <div class="row_posters">
-            <img src="images/large-movie1.jpg" alt="" class="row_poster row_posterLarge">
-            <img src="images/large-movie2.jpg" alt="" class="row_poster row_posterLarge">
-            <img src="images/large-movie3.jpg" alt="" class="row_poster row_posterLarge">
-            <img src="images/large-movie4.jpg" alt="" class="row_poster row_posterLarge">
-            <img src="images/large-movie5.jpg" alt="" class="row_poster row_posterLarge">
-            <img src="images/large-movie6.jpg" alt="" class="row_poster row_posterLarge">
-            <img src="images/large-movie7.jpg" alt="" class="row_poster row_posterLarge">
-            <img src="images/large-movie1.jpg" alt="" class="row_poster row_posterLarge">
-            <img src="images/large-movie2.jpg" alt="" class="row_poster row_posterLarge">
-            <img src="images/large-movie3.jpg" alt="" class="row_poster row_posterLarge">
-            <img src="images/large-movie4.jpg" alt="" class="row_poster row_posterLarge">
-            <img src="images/large-movie5.jpg" alt="" class="row_poster row_posterLarge">
-            <img src="images/large-movie6.jpg" alt="" class="row_poster row_posterLarge">
-            <img src="images/large-movie7.jpg" alt="" class="row_poster row_posterLarge">
-            <img src="images/large-movie4.jpg" alt="" class="row_poster row_posterLarge">
+              <div class="TVSerie_Card">
+                <div class="Flip_Card_TVSerie">
+                  <div class="Flip_Card_TVSerie_Inner">
+                    <div class="Flip_Card_TVSerie_Front">
+                      <p>TV Serie</p>
+                    </div>
+                    <div class="Flip_Card_TVSerie_Back">
+                      <p>Arcane</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="Music_Card">
+                <div class="Flip_Card_Music">
+                  <div class="Flip_Card_Music_Inner">
+                    <div class="Flip_Card_Music_Front">
+                      <p>Music</p>
+                    </div>
+                    <div class="Flip_Card_Music_Back">
+                      <p>Enemy</p>
+                      <p>Artist: Imagine Dragons</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+
+              <div class="Book_Card">
+                <div class="Flip_Card_Book">
+                  <div class="Flip_Card_Book_Inner">
+                    <div class="Flip_Card_Book_Front">
+                      <p>Book</p>
+                    </div>
+                    <div class="Flip_Card_Book_Back">
+                      <p>Norwegian Wood</p>
+                      <p>Author: Haruki Murakami</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+
+              <div class="Artwork_Card">
+                <div class="Flip_Card_Artwork">
+                  <div class="Flip_Card_Artwork_Inner">
+                    <div class="Flip_Card_Artwork_Front">
+                      <p>Artwork</p>
+                    </div>
+                    <div class="Flip_Card_Artwork_Back">
+                      <p>Guernica</p>
+                      <p>Painter: Pablo Picasso</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+
           </div>
-        </div>
+        </section>
+        <section class="Stats">
+          <div class="Your_Statistics">
+            <h4>Your Statistics</h4>
+            <table style="width:100%">
+              <tbody>
+                <tr style="height: 55px">
+                  <td style="width:20%"><i class="bi bi-film"></i></td>
+                  <td style="width:40%">1047<i class="bi bi-star"></i></td>
+                  <td style="width:40%">331<i class="bi bi-eye"></i></td>
+                </tr>
+                <tr style="height: 55px">
+                  <td style="width:20%"><i class="bi bi-tv"></i></td>
+                  <td style="width:40%">67<i class="bi bi-star"></i></td>
+                  <td style="width:40%">54<i class="bi bi-eye"></i></td>
+                </tr>
+                <tr style="height: 55px">
+                  <td style="width:20%"><i class="bi bi-music-note-beamed"></i></td>
+                  <td style="width:40%">2774<i class="bi bi-heart"></i></td>
+                </tr>
+                <tr style="height: 55px">
+                  <td style="width:20%"><i class="bi bi-book"></i></td>
+                  <td style="width:40%">1047<i class="bi bi-star"></i></td>
+                  <td style="width:40%">331<i class="bi bi-eye"></i></td>
+                </tr>
+                <tr style="height: 55px">
+                  <td style="width:20%"><i class="bi bi-brush"></i></td>
+                  <td style="width:40%">49<i class="bi bi-heart"></i></td>
+                </tr>
+              </tbody>
+            </table>
 
-        <div class="From_Your_Mov_Watchlist_Row">
-          <h5>From Your Watchlist</h5>
-          <div class="row_posters">
-            <img src="images/small-movie1.jpg" alt="" class="row_poster">
-            <img src="images/small-movie2.jpg" alt="" class="row_poster">
-            <img src="images/small-movie3.jpg" alt="" class="row_poster">
-            <img src="images/small-movie4.jpg" alt="" class="row_poster">
-            <img src="images/small-movie5.jpg" alt="" class="row_poster">
-            <img src="images/small-movie6.jpg" alt="" class="row_poster">
-            <img src="images/small-movie7.jpg" alt="" class="row_poster">
-            <img src="images/small-movie1.jpg" alt="" class="row_poster">
-            <img src="images/small-movie2.jpg" alt="" class="row_poster">
-            <img src="images/small-movie3.jpg" alt="" class="row_poster">
-            <img src="images/small-movie4.jpg" alt="" class="row_poster">
-            <img src="images/small-movie5.jpg" alt="" class="row_poster">
-            <img src="images/small-movie6.jpg" alt="" class="row_poster">
-            <img src="images/small-movie7.jpg" alt="" class="row_poster">
-            <img src="images/small-movie4.jpg" alt="" class="row_poster">
-          </div>
-
-        </div>
-
-        <div class="Coming Soon_Row">
-          <h5>Coming Soon</h5>
-          <div class="row_posters">
-            <img src="images/small-movie1.jpg" alt="" class="row_poster">
-            <img src="images/small-movie2.jpg" alt="" class="row_poster">
-            <img src="images/small-movie3.jpg" alt="" class="row_poster">
-            <img src="images/small-movie4.jpg" alt="" class="row_poster">
-            <img src="images/small-movie5.jpg" alt="" class="row_poster">
-            <img src="images/small-movie6.jpg" alt="" class="row_poster">
-            <img src="images/small-movie7.jpg" alt="" class="row_poster">
-            <img src="images/small-movie1.jpg" alt="" class="row_poster">
-            <img src="images/small-movie2.jpg" alt="" class="row_poster">
-            <img src="images/small-movie3.jpg" alt="" class="row_poster">
-            <img src="images/small-movie4.jpg" alt="" class="row_poster">
-            <img src="images/small-movie5.jpg" alt="" class="row_poster">
-            <img src="images/small-movie6.jpg" alt="" class="row_poster">
-            <img src="images/small-movie7.jpg" alt="" class="row_poster">
-            <img src="images/small-movie4.jpg" alt="" class="row_poster">
-          </div>
-
-        </div>
-      </div>
-      <!-- Movies Section End -->
-      <!-- --------------------------------------------------------------------------- -->
-      <!-- TV Series Section Start -->
-      <div class="TV_Series">
-        <h4>TV Series</h4>
-        <div class="Featured_TVSeries_Row">
-          <h5>Featured TV Series</h5>
-          <div class="row_posters">
-            <img src="images/large-movie1.jpg" alt="" class="row_poster row_posterLarge">
-            <img src="images/large-movie2.jpg" alt="" class="row_poster row_posterLarge">
-            <img src="images/large-movie3.jpg" alt="" class="row_poster row_posterLarge">
-            <img src="images/large-movie4.jpg" alt="" class="row_poster row_posterLarge">
-            <img src="images/large-movie5.jpg" alt="" class="row_poster row_posterLarge">
-            <img src="images/large-movie6.jpg" alt="" class="row_poster row_posterLarge">
-            <img src="images/large-movie7.jpg" alt="" class="row_poster row_posterLarge">
-            <img src="images/large-movie1.jpg" alt="" class="row_poster row_posterLarge">
-            <img src="images/large-movie2.jpg" alt="" class="row_poster row_posterLarge">
-            <img src="images/large-movie3.jpg" alt="" class="row_poster row_posterLarge">
-            <img src="images/large-movie4.jpg" alt="" class="row_poster row_posterLarge">
-            <img src="images/large-movie5.jpg" alt="" class="row_poster row_posterLarge">
-            <img src="images/large-movie6.jpg" alt="" class="row_poster row_posterLarge">
-            <img src="images/large-movie7.jpg" alt="" class="row_poster row_posterLarge">
-            <img src="images/large-movie4.jpg" alt="" class="row_poster row_posterLarge">
-          </div>
-
-        </div>
-
-        <div class="From_Your_TV_Watchlist_Row">
-          <h5>From Your Watchlist</h5>
-          <div class="row_posters">
-            <img src="images/small-movie1.jpg" alt="" class="row_poster">
-            <img src="images/small-movie2.jpg" alt="" class="row_poster">
-            <img src="images/small-movie3.jpg" alt="" class="row_poster">
-            <img src="images/small-movie4.jpg" alt="" class="row_poster">
-            <img src="images/small-movie5.jpg" alt="" class="row_poster">
-            <img src="images/small-movie6.jpg" alt="" class="row_poster">
-            <img src="images/small-movie7.jpg" alt="" class="row_poster">
-            <img src="images/small-movie1.jpg" alt="" class="row_poster">
-            <img src="images/small-movie2.jpg" alt="" class="row_poster">
-            <img src="images/small-movie3.jpg" alt="" class="row_poster">
-            <img src="images/small-movie4.jpg" alt="" class="row_poster">
-            <img src="images/small-movie5.jpg" alt="" class="row_poster">
-            <img src="images/small-movie6.jpg" alt="" class="row_poster">
-            <img src="images/small-movie7.jpg" alt="" class="row_poster">
-            <img src="images/small-movie4.jpg" alt="" class="row_poster">
           </div>
 
-        </div>
+        </section>
+      </section>
 
-        <div class="Coming Soon_Row">
-          <h5>Coming Soon</h5>
-          <div class="row_posters">
-            <img src="images/small-movie1.jpg" alt="" class="row_poster">
-            <img src="images/small-movie2.jpg" alt="" class="row_poster">
-            <img src="images/small-movie3.jpg" alt="" class="row_poster">
-            <img src="images/small-movie4.jpg" alt="" class="row_poster">
-            <img src="images/small-movie5.jpg" alt="" class="row_poster">
-            <img src="images/small-movie6.jpg" alt="" class="row_poster">
-            <img src="images/small-movie7.jpg" alt="" class="row_poster">
-            <img src="images/small-movie1.jpg" alt="" class="row_poster">
-            <img src="images/small-movie2.jpg" alt="" class="row_poster">
-            <img src="images/small-movie3.jpg" alt="" class="row_poster">
-            <img src="images/small-movie4.jpg" alt="" class="row_poster">
-            <img src="images/small-movie5.jpg" alt="" class="row_poster">
-            <img src="images/small-movie6.jpg" alt="" class="row_poster">
-            <img src="images/small-movie7.jpg" alt="" class="row_poster">
-            <img src="images/small-movie4.jpg" alt="" class="row_poster">
-          </div>
 
-        </div>
-      </div>
-      <!-- TV Series Section End -->
-      <!-- --------------------------------------------------------------------------- -->
-      <!-- Music Section Start -->
-      <div class="Music">
-        <h4>Music</h4>
-        <div class="From_Your_Liked_Songs_Row">
-          <h5>From Your Liked Songs</h5>
-          <div class="row_posters">
-            <img src="images/large-movie1.jpg" alt="" class="row_poster row_posterLarge">
-            <img src="images/large-movie2.jpg" alt="" class="row_poster row_posterLarge">
-            <img src="images/large-movie3.jpg" alt="" class="row_poster row_posterLarge">
-            <img src="images/large-movie4.jpg" alt="" class="row_poster row_posterLarge">
-            <img src="images/large-movie5.jpg" alt="" class="row_poster row_posterLarge">
-            <img src="images/large-movie6.jpg" alt="" class="row_poster row_posterLarge">
-            <img src="images/large-movie7.jpg" alt="" class="row_poster row_posterLarge">
-            <img src="images/large-movie1.jpg" alt="" class="row_poster row_posterLarge">
-            <img src="images/large-movie2.jpg" alt="" class="row_poster row_posterLarge">
-            <img src="images/large-movie3.jpg" alt="" class="row_poster row_posterLarge">
-            <img src="images/large-movie4.jpg" alt="" class="row_poster row_posterLarge">
-            <img src="images/large-movie5.jpg" alt="" class="row_poster row_posterLarge">
-            <img src="images/large-movie6.jpg" alt="" class="row_poster row_posterLarge">
-            <img src="images/large-movie7.jpg" alt="" class="row_poster row_posterLarge">
-            <img src="images/large-movie4.jpg" alt="" class="row_poster row_posterLarge">
-          </div>
-
-        </div>
-      </div>
-      <!-- Music Section End -->
-      <!-- --------------------------------------------------------------------------- -->
-      <!-- Books Section Start -->
-      <div class="Books">
-        <h4>Books</h4>
-        <div class="Best_Sellers_Row">
-          <h5>Best Sellers</h5>
-          <div class="row_posters">
-            <img src="images/large-movie1.jpg" alt="" class="row_poster row_posterLarge">
-            <img src="images/large-movie2.jpg" alt="" class="row_poster row_posterLarge">
-            <img src="images/large-movie3.jpg" alt="" class="row_poster row_posterLarge">
-            <img src="images/large-movie4.jpg" alt="" class="row_poster row_posterLarge">
-            <img src="images/large-movie5.jpg" alt="" class="row_poster row_posterLarge">
-            <img src="images/large-movie6.jpg" alt="" class="row_poster row_posterLarge">
-            <img src="images/large-movie7.jpg" alt="" class="row_poster row_posterLarge">
-            <img src="images/large-movie1.jpg" alt="" class="row_poster row_posterLarge">
-            <img src="images/large-movie2.jpg" alt="" class="row_poster row_posterLarge">
-            <img src="images/large-movie3.jpg" alt="" class="row_poster row_posterLarge">
-            <img src="images/large-movie4.jpg" alt="" class="row_poster row_posterLarge">
-            <img src="images/large-movie5.jpg" alt="" class="row_poster row_posterLarge">
-            <img src="images/large-movie6.jpg" alt="" class="row_poster row_posterLarge">
-            <img src="images/large-movie7.jpg" alt="" class="row_poster row_posterLarge">
-            <img src="images/large-movie4.jpg" alt="" class="row_poster row_posterLarge">
-          </div>
-
-        </div>
-
-        <div class="From_Your_Reading_List_Row">
-          <h5>From Your Reading List</h5>
-          <div class="row_posters">
-            <img src="images/small-movie1.jpg" alt="" class="row_poster">
-            <img src="images/small-movie2.jpg" alt="" class="row_poster">
-            <img src="images/small-movie3.jpg" alt="" class="row_poster">
-            <img src="images/small-movie4.jpg" alt="" class="row_poster">
-            <img src="images/small-movie5.jpg" alt="" class="row_poster">
-            <img src="images/small-movie6.jpg" alt="" class="row_poster">
-            <img src="images/small-movie7.jpg" alt="" class="row_poster">
-            <img src="images/small-movie1.jpg" alt="" class="row_poster">
-            <img src="images/small-movie2.jpg" alt="" class="row_poster">
-            <img src="images/small-movie3.jpg" alt="" class="row_poster">
-            <img src="images/small-movie4.jpg" alt="" class="row_poster">
-            <img src="images/small-movie5.jpg" alt="" class="row_poster">
-            <img src="images/small-movie6.jpg" alt="" class="row_poster">
-            <img src="images/small-movie7.jpg" alt="" class="row_poster">
-            <img src="images/small-movie4.jpg" alt="" class="row_poster">
-          </div>
-
-        </div>
-
-        <div class="Featured_Books_Row">
-          <h5>Featured Books</h5>
-          <div class="row_posters">
-            <img src="images/small-movie1.jpg" alt="" class="row_poster">
-            <img src="images/small-movie2.jpg" alt="" class="row_poster">
-            <img src="images/small-movie3.jpg" alt="" class="row_poster">
-            <img src="images/small-movie4.jpg" alt="" class="row_poster">
-            <img src="images/small-movie5.jpg" alt="" class="row_poster">
-            <img src="images/small-movie6.jpg" alt="" class="row_poster">
-            <img src="images/small-movie7.jpg" alt="" class="row_poster">
-            <img src="images/small-movie1.jpg" alt="" class="row_poster">
-            <img src="images/small-movie2.jpg" alt="" class="row_poster">
-            <img src="images/small-movie3.jpg" alt="" class="row_poster">
-            <img src="images/small-movie4.jpg" alt="" class="row_poster">
-            <img src="images/small-movie5.jpg" alt="" class="row_poster">
-            <img src="images/small-movie6.jpg" alt="" class="row_poster">
-            <img src="images/small-movie7.jpg" alt="" class="row_poster">
-            <img src="images/small-movie4.jpg" alt="" class="row_poster">
-          </div>
-
-        </div>
-      </div>
-      <!-- Books Section End -->
-      <!-- --------------------------------------------------------------------------- -->
-      <!-- Artworks Section Start -->
-      <div class="Artworks">
-        <h4>Artworks</h4>
-        <div class="Daily_Recommendations_Row">
-          <h5>Daily Recommendations</h5>
-          <div class="row_posters">
-            <img src="images/large-movie1.jpg" alt="" class="row_poster row_posterLarge">
-            <img src="images/large-movie2.jpg" alt="" class="row_poster row_posterLarge">
-            <img src="images/large-movie3.jpg" alt="" class="row_poster row_posterLarge">
-            <img src="images/large-movie4.jpg" alt="" class="row_poster row_posterLarge">
-            <img src="images/large-movie5.jpg" alt="" class="row_poster row_posterLarge">
-            <img src="images/large-movie6.jpg" alt="" class="row_poster row_posterLarge">
-            <img src="images/large-movie7.jpg" alt="" class="row_poster row_posterLarge">
-            <img src="images/large-movie1.jpg" alt="" class="row_poster row_posterLarge">
-            <img src="images/large-movie2.jpg" alt="" class="row_poster row_posterLarge">
-            <img src="images/large-movie3.jpg" alt="" class="row_poster row_posterLarge">
-            <img src="images/large-movie4.jpg" alt="" class="row_poster row_posterLarge">
-            <img src="images/large-movie5.jpg" alt="" class="row_poster row_posterLarge">
-            <img src="images/large-movie6.jpg" alt="" class="row_poster row_posterLarge">
-            <img src="images/large-movie7.jpg" alt="" class="row_poster row_posterLarge">
-            <img src="images/large-movie4.jpg" alt="" class="row_poster row_posterLarge">
-          </div>
-        </div>
-
-        <div class="From_Your_Collection_Row">
-          <h5>From Your Collection</h5>
-          <div class="row_posters">
-            <img src="images/small-movie1.jpg" alt="" class="row_poster">
-            <img src="images/small-movie2.jpg" alt="" class="row_poster">
-            <img src="images/small-movie3.jpg" alt="" class="row_poster">
-            <img src="images/small-movie4.jpg" alt="" class="row_poster">
-            <img src="images/small-movie5.jpg" alt="" class="row_poster">
-            <img src="images/small-movie6.jpg" alt="" class="row_poster">
-            <img src="images/small-movie7.jpg" alt="" class="row_poster">
-            <img src="images/small-movie1.jpg" alt="" class="row_poster">
-            <img src="images/small-movie2.jpg" alt="" class="row_poster">
-            <img src="images/small-movie3.jpg" alt="" class="row_poster">
-            <img src="images/small-movie4.jpg" alt="" class="row_poster">
-            <img src="images/small-movie5.jpg" alt="" class="row_poster">
-            <img src="images/small-movie6.jpg" alt="" class="row_poster">
-            <img src="images/small-movie7.jpg" alt="" class="row_poster">
-            <img src="images/small-movie4.jpg" alt="" class="row_poster">
-          </div>
-        </div>
-      </div>
-      <!-- Artworks Section End -->
     </div>
+    <!-- Daily Shuffle Section End -->
+    <!-- --------------------------------------------------------------------------- -->
+    <!-- Movies Section Start -->
+    <div class="Movies">
+      <h4>Movies</h4>
+      <div class="Featured_Movies_Row">
+        <h5>Featured Movies</h5>
+        <div class="row_posters">
+          <img src="images/large-movie1.jpg" alt="" class="row_poster row_posterLarge">
+          <img src="images/large-movie2.jpg" alt="" class="row_poster row_posterLarge">
+          <img src="images/large-movie3.jpg" alt="" class="row_poster row_posterLarge">
+          <img src="images/large-movie4.jpg" alt="" class="row_poster row_posterLarge">
+          <img src="images/large-movie5.jpg" alt="" class="row_poster row_posterLarge">
+          <img src="images/large-movie6.jpg" alt="" class="row_poster row_posterLarge">
+          <img src="images/large-movie7.jpg" alt="" class="row_poster row_posterLarge">
+          <img src="images/large-movie1.jpg" alt="" class="row_poster row_posterLarge">
+          <img src="images/large-movie2.jpg" alt="" class="row_poster row_posterLarge">
+          <img src="images/large-movie3.jpg" alt="" class="row_poster row_posterLarge">
+          <img src="images/large-movie4.jpg" alt="" class="row_poster row_posterLarge">
+          <img src="images/large-movie5.jpg" alt="" class="row_poster row_posterLarge">
+          <img src="images/large-movie6.jpg" alt="" class="row_poster row_posterLarge">
+          <img src="images/large-movie7.jpg" alt="" class="row_poster row_posterLarge">
+          <img src="images/large-movie4.jpg" alt="" class="row_poster row_posterLarge">
+        </div>
+      </div>
+
+      <div class="From_Your_Mov_Watchlist_Row">
+        <h5>From Your Watchlist</h5>
+        <div class="row_posters">
+          <img src="images/small-movie1.jpg" alt="" class="row_poster">
+          <img src="images/small-movie2.jpg" alt="" class="row_poster">
+          <img src="images/small-movie3.jpg" alt="" class="row_poster">
+          <img src="images/small-movie4.jpg" alt="" class="row_poster">
+          <img src="images/small-movie5.jpg" alt="" class="row_poster">
+          <img src="images/small-movie6.jpg" alt="" class="row_poster">
+          <img src="images/small-movie7.jpg" alt="" class="row_poster">
+          <img src="images/small-movie1.jpg" alt="" class="row_poster">
+          <img src="images/small-movie2.jpg" alt="" class="row_poster">
+          <img src="images/small-movie3.jpg" alt="" class="row_poster">
+          <img src="images/small-movie4.jpg" alt="" class="row_poster">
+          <img src="images/small-movie5.jpg" alt="" class="row_poster">
+          <img src="images/small-movie6.jpg" alt="" class="row_poster">
+          <img src="images/small-movie7.jpg" alt="" class="row_poster">
+          <img src="images/small-movie4.jpg" alt="" class="row_poster">
+        </div>
+
+      </div>
+
+      <div class="Coming Soon_Row">
+        <h5>Coming Soon</h5>
+        <div class="row_posters">
+          <img src="images/small-movie1.jpg" alt="" class="row_poster">
+          <img src="images/small-movie2.jpg" alt="" class="row_poster">
+          <img src="images/small-movie3.jpg" alt="" class="row_poster">
+          <img src="images/small-movie4.jpg" alt="" class="row_poster">
+          <img src="images/small-movie5.jpg" alt="" class="row_poster">
+          <img src="images/small-movie6.jpg" alt="" class="row_poster">
+          <img src="images/small-movie7.jpg" alt="" class="row_poster">
+          <img src="images/small-movie1.jpg" alt="" class="row_poster">
+          <img src="images/small-movie2.jpg" alt="" class="row_poster">
+          <img src="images/small-movie3.jpg" alt="" class="row_poster">
+          <img src="images/small-movie4.jpg" alt="" class="row_poster">
+          <img src="images/small-movie5.jpg" alt="" class="row_poster">
+          <img src="images/small-movie6.jpg" alt="" class="row_poster">
+          <img src="images/small-movie7.jpg" alt="" class="row_poster">
+          <img src="images/small-movie4.jpg" alt="" class="row_poster">
+        </div>
+
+      </div>
+    </div>
+    <!-- Movies Section End -->
+    <!-- --------------------------------------------------------------------------- -->
+    <!-- TV Series Section Start -->
+    <div class="TV_Series">
+      <h4>TV Series</h4>
+      <div class="Featured_TVSeries_Row">
+        <h5>Featured TV Series</h5>
+        <div class="row_posters">
+          <img src="images/large-movie1.jpg" alt="" class="row_poster row_posterLarge">
+          <img src="images/large-movie2.jpg" alt="" class="row_poster row_posterLarge">
+          <img src="images/large-movie3.jpg" alt="" class="row_poster row_posterLarge">
+          <img src="images/large-movie4.jpg" alt="" class="row_poster row_posterLarge">
+          <img src="images/large-movie5.jpg" alt="" class="row_poster row_posterLarge">
+          <img src="images/large-movie6.jpg" alt="" class="row_poster row_posterLarge">
+          <img src="images/large-movie7.jpg" alt="" class="row_poster row_posterLarge">
+          <img src="images/large-movie1.jpg" alt="" class="row_poster row_posterLarge">
+          <img src="images/large-movie2.jpg" alt="" class="row_poster row_posterLarge">
+          <img src="images/large-movie3.jpg" alt="" class="row_poster row_posterLarge">
+          <img src="images/large-movie4.jpg" alt="" class="row_poster row_posterLarge">
+          <img src="images/large-movie5.jpg" alt="" class="row_poster row_posterLarge">
+          <img src="images/large-movie6.jpg" alt="" class="row_poster row_posterLarge">
+          <img src="images/large-movie7.jpg" alt="" class="row_poster row_posterLarge">
+          <img src="images/large-movie4.jpg" alt="" class="row_poster row_posterLarge">
+        </div>
+
+      </div>
+
+      <div class="From_Your_TV_Watchlist_Row">
+        <h5>From Your Watchlist</h5>
+        <div class="row_posters">
+          <img src="images/small-movie1.jpg" alt="" class="row_poster">
+          <img src="images/small-movie2.jpg" alt="" class="row_poster">
+          <img src="images/small-movie3.jpg" alt="" class="row_poster">
+          <img src="images/small-movie4.jpg" alt="" class="row_poster">
+          <img src="images/small-movie5.jpg" alt="" class="row_poster">
+          <img src="images/small-movie6.jpg" alt="" class="row_poster">
+          <img src="images/small-movie7.jpg" alt="" class="row_poster">
+          <img src="images/small-movie1.jpg" alt="" class="row_poster">
+          <img src="images/small-movie2.jpg" alt="" class="row_poster">
+          <img src="images/small-movie3.jpg" alt="" class="row_poster">
+          <img src="images/small-movie4.jpg" alt="" class="row_poster">
+          <img src="images/small-movie5.jpg" alt="" class="row_poster">
+          <img src="images/small-movie6.jpg" alt="" class="row_poster">
+          <img src="images/small-movie7.jpg" alt="" class="row_poster">
+          <img src="images/small-movie4.jpg" alt="" class="row_poster">
+        </div>
+
+      </div>
+
+      <div class="Coming Soon_Row">
+        <h5>Coming Soon</h5>
+        <div class="row_posters">
+          <img src="images/small-movie1.jpg" alt="" class="row_poster">
+          <img src="images/small-movie2.jpg" alt="" class="row_poster">
+          <img src="images/small-movie3.jpg" alt="" class="row_poster">
+          <img src="images/small-movie4.jpg" alt="" class="row_poster">
+          <img src="images/small-movie5.jpg" alt="" class="row_poster">
+          <img src="images/small-movie6.jpg" alt="" class="row_poster">
+          <img src="images/small-movie7.jpg" alt="" class="row_poster">
+          <img src="images/small-movie1.jpg" alt="" class="row_poster">
+          <img src="images/small-movie2.jpg" alt="" class="row_poster">
+          <img src="images/small-movie3.jpg" alt="" class="row_poster">
+          <img src="images/small-movie4.jpg" alt="" class="row_poster">
+          <img src="images/small-movie5.jpg" alt="" class="row_poster">
+          <img src="images/small-movie6.jpg" alt="" class="row_poster">
+          <img src="images/small-movie7.jpg" alt="" class="row_poster">
+          <img src="images/small-movie4.jpg" alt="" class="row_poster">
+        </div>
+
+      </div>
+    </div>
+    <!-- TV Series Section End -->
+    <!-- --------------------------------------------------------------------------- -->
+    <!-- Music Section Start -->
+    <div class="Music">
+      <h4>Music</h4>
+      <div class="From_Your_Liked_Songs_Row">
+        <h5>From Your Liked Songs</h5>
+        <div class="row_posters">
+          <img src="images/large-movie1.jpg" alt="" class="row_poster row_posterLarge">
+          <img src="images/large-movie2.jpg" alt="" class="row_poster row_posterLarge">
+          <img src="images/large-movie3.jpg" alt="" class="row_poster row_posterLarge">
+          <img src="images/large-movie4.jpg" alt="" class="row_poster row_posterLarge">
+          <img src="images/large-movie5.jpg" alt="" class="row_poster row_posterLarge">
+          <img src="images/large-movie6.jpg" alt="" class="row_poster row_posterLarge">
+          <img src="images/large-movie7.jpg" alt="" class="row_poster row_posterLarge">
+          <img src="images/large-movie1.jpg" alt="" class="row_poster row_posterLarge">
+          <img src="images/large-movie2.jpg" alt="" class="row_poster row_posterLarge">
+          <img src="images/large-movie3.jpg" alt="" class="row_poster row_posterLarge">
+          <img src="images/large-movie4.jpg" alt="" class="row_poster row_posterLarge">
+          <img src="images/large-movie5.jpg" alt="" class="row_poster row_posterLarge">
+          <img src="images/large-movie6.jpg" alt="" class="row_poster row_posterLarge">
+          <img src="images/large-movie7.jpg" alt="" class="row_poster row_posterLarge">
+          <img src="images/large-movie4.jpg" alt="" class="row_poster row_posterLarge">
+        </div>
+
+      </div>
+    </div>
+    <!-- Music Section End -->
+    <!-- --------------------------------------------------------------------------- -->
+    <!-- Books Section Start -->
+    <div class="Books">
+      <h4>Books</h4>
+      <div class="Best_Sellers_Row">
+        <h5>Best Sellers</h5>
+        <div class="row_posters">
+          <img src="images/large-movie1.jpg" alt="" class="row_poster row_posterLarge">
+          <img src="images/large-movie2.jpg" alt="" class="row_poster row_posterLarge">
+          <img src="images/large-movie3.jpg" alt="" class="row_poster row_posterLarge">
+          <img src="images/large-movie4.jpg" alt="" class="row_poster row_posterLarge">
+          <img src="images/large-movie5.jpg" alt="" class="row_poster row_posterLarge">
+          <img src="images/large-movie6.jpg" alt="" class="row_poster row_posterLarge">
+          <img src="images/large-movie7.jpg" alt="" class="row_poster row_posterLarge">
+          <img src="images/large-movie1.jpg" alt="" class="row_poster row_posterLarge">
+          <img src="images/large-movie2.jpg" alt="" class="row_poster row_posterLarge">
+          <img src="images/large-movie3.jpg" alt="" class="row_poster row_posterLarge">
+          <img src="images/large-movie4.jpg" alt="" class="row_poster row_posterLarge">
+          <img src="images/large-movie5.jpg" alt="" class="row_poster row_posterLarge">
+          <img src="images/large-movie6.jpg" alt="" class="row_poster row_posterLarge">
+          <img src="images/large-movie7.jpg" alt="" class="row_poster row_posterLarge">
+          <img src="images/large-movie4.jpg" alt="" class="row_poster row_posterLarge">
+        </div>
+
+      </div>
+
+      <div class="From_Your_Reading_List_Row">
+        <h5>From Your Reading List</h5>
+        <div class="row_posters">
+          <img src="images/small-movie1.jpg" alt="" class="row_poster">
+          <img src="images/small-movie2.jpg" alt="" class="row_poster">
+          <img src="images/small-movie3.jpg" alt="" class="row_poster">
+          <img src="images/small-movie4.jpg" alt="" class="row_poster">
+          <img src="images/small-movie5.jpg" alt="" class="row_poster">
+          <img src="images/small-movie6.jpg" alt="" class="row_poster">
+          <img src="images/small-movie7.jpg" alt="" class="row_poster">
+          <img src="images/small-movie1.jpg" alt="" class="row_poster">
+          <img src="images/small-movie2.jpg" alt="" class="row_poster">
+          <img src="images/small-movie3.jpg" alt="" class="row_poster">
+          <img src="images/small-movie4.jpg" alt="" class="row_poster">
+          <img src="images/small-movie5.jpg" alt="" class="row_poster">
+          <img src="images/small-movie6.jpg" alt="" class="row_poster">
+          <img src="images/small-movie7.jpg" alt="" class="row_poster">
+          <img src="images/small-movie4.jpg" alt="" class="row_poster">
+        </div>
+
+      </div>
+
+      <div class="Featured_Books_Row">
+        <h5>Featured Books</h5>
+        <div class="row_posters">
+          <img src="images/small-movie1.jpg" alt="" class="row_poster">
+          <img src="images/small-movie2.jpg" alt="" class="row_poster">
+          <img src="images/small-movie3.jpg" alt="" class="row_poster">
+          <img src="images/small-movie4.jpg" alt="" class="row_poster">
+          <img src="images/small-movie5.jpg" alt="" class="row_poster">
+          <img src="images/small-movie6.jpg" alt="" class="row_poster">
+          <img src="images/small-movie7.jpg" alt="" class="row_poster">
+          <img src="images/small-movie1.jpg" alt="" class="row_poster">
+          <img src="images/small-movie2.jpg" alt="" class="row_poster">
+          <img src="images/small-movie3.jpg" alt="" class="row_poster">
+          <img src="images/small-movie4.jpg" alt="" class="row_poster">
+          <img src="images/small-movie5.jpg" alt="" class="row_poster">
+          <img src="images/small-movie6.jpg" alt="" class="row_poster">
+          <img src="images/small-movie7.jpg" alt="" class="row_poster">
+          <img src="images/small-movie4.jpg" alt="" class="row_poster">
+        </div>
+
+      </div>
+    </div>
+    <!-- Books Section End -->
+    <!-- --------------------------------------------------------------------------- -->
+    <!-- Artworks Section Start -->
+    <div class="Artworks">
+      <h4>Artworks</h4>
+      <div class="Daily_Recommendations_Row">
+        <h5>Daily Recommendations</h5>
+        <div class="row_posters">
+          <img src="images/large-movie1.jpg" alt="" class="row_poster row_posterLarge">
+          <img src="images/large-movie2.jpg" alt="" class="row_poster row_posterLarge">
+          <img src="images/large-movie3.jpg" alt="" class="row_poster row_posterLarge">
+          <img src="images/large-movie4.jpg" alt="" class="row_poster row_posterLarge">
+          <img src="images/large-movie5.jpg" alt="" class="row_poster row_posterLarge">
+          <img src="images/large-movie6.jpg" alt="" class="row_poster row_posterLarge">
+          <img src="images/large-movie7.jpg" alt="" class="row_poster row_posterLarge">
+          <img src="images/large-movie1.jpg" alt="" class="row_poster row_posterLarge">
+          <img src="images/large-movie2.jpg" alt="" class="row_poster row_posterLarge">
+          <img src="images/large-movie3.jpg" alt="" class="row_poster row_posterLarge">
+          <img src="images/large-movie4.jpg" alt="" class="row_poster row_posterLarge">
+          <img src="images/large-movie5.jpg" alt="" class="row_poster row_posterLarge">
+          <img src="images/large-movie6.jpg" alt="" class="row_poster row_posterLarge">
+          <img src="images/large-movie7.jpg" alt="" class="row_poster row_posterLarge">
+          <img src="images/large-movie4.jpg" alt="" class="row_poster row_posterLarge">
+        </div>
+      </div>
+
+      <div class="From_Your_Collection_Row">
+        <h5>From Your Collection</h5>
+        <div class="row_posters">
+          <img src="images/small-movie1.jpg" alt="" class="row_poster">
+          <img src="images/small-movie2.jpg" alt="" class="row_poster">
+          <img src="images/small-movie3.jpg" alt="" class="row_poster">
+          <img src="images/small-movie4.jpg" alt="" class="row_poster">
+          <img src="images/small-movie5.jpg" alt="" class="row_poster">
+          <img src="images/small-movie6.jpg" alt="" class="row_poster">
+          <img src="images/small-movie7.jpg" alt="" class="row_poster">
+          <img src="images/small-movie1.jpg" alt="" class="row_poster">
+          <img src="images/small-movie2.jpg" alt="" class="row_poster">
+          <img src="images/small-movie3.jpg" alt="" class="row_poster">
+          <img src="images/small-movie4.jpg" alt="" class="row_poster">
+          <img src="images/small-movie5.jpg" alt="" class="row_poster">
+          <img src="images/small-movie6.jpg" alt="" class="row_poster">
+          <img src="images/small-movie7.jpg" alt="" class="row_poster">
+          <img src="images/small-movie4.jpg" alt="" class="row_poster">
+        </div>
+      </div>
+    </div>
+    <!-- Artworks Section End -->
+  </div>
   </div>
 </body>
 
 
 <script type="text/javascript">
-  const scrollContainer = document.querySelector("row_posters");
+  const card1 = document.querySelector(".Movie_Card");
+  const card2 = document.querySelector(".TVSerie_Card");
+  const card3 = document.querySelector(".Music_Card");
+  const card4 = document.querySelector(".Book_Card");
+  const card5 = document.querySelector(".Artwork_Card");
 
-  scrollContainer.addEventListener("wheel", (evt) => {
-    evt.preventDefault();
-    scrollContainer.scrollLeft += evt.deltaY;
+  const cardContent1 = document.querySelector(".Flip_Card_Movie_Inner");
+  const cardContent2 = document.querySelector(".Flip_Card_TVSerie_Inner");
+  const cardContent3 = document.querySelector(".Flip_Card_Music_Inner");
+  const cardContent4 = document.querySelector(".Flip_Card_Book_Inner");
+  const cardContent5 = document.querySelector(".Flip_Card_Artwork_Inner");
+
+  let flipped = false;
+
+  card1.addEventListener("click", () => {
+    if (!flipped) {
+      cardContent1.style.transform = "rotateY(180deg)"
+
+    } else {
+      cardContent1.style.transform = "rotateY(0deg)"
+    }
+    flipped = !flipped;
+  });
+
+  card2.addEventListener("click", () => {
+    if (!flipped) {
+      cardContent2.style.transform = "rotateY(180deg)"
+
+    } else {
+      cardContent2.style.transform = "rotateY(0deg)"
+    }
+    flipped = !flipped;
+  });
+
+  card3.addEventListener("click", () => {
+    if (!flipped) {
+      cardContent3.style.transform = "rotateY(180deg)"
+
+    } else {
+      cardContent3.style.transform = "rotateY(0deg)"
+    }
+    flipped = !flipped;
+  });
+
+  card4.addEventListener("click", () => {
+    if (!flipped) {
+      cardContent4.style.transform = "rotateY(180deg)"
+
+    } else {
+      cardContent4.style.transform = "rotateY(0deg)"
+    }
+    flipped = !flipped;
+  });
+
+  card5.addEventListener("click", () => {
+    if (!flipped) {
+      cardContent5.style.transform = "rotateY(180deg)"
+
+    } else {
+      cardContent5.style.transform = "rotateY(0deg)"
+    }
+    flipped = !flipped;
   });
 </script>
