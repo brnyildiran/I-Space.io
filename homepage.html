@@ -10,6 +10,8 @@
   <link href="https://fonts.googleapis.com/css2?family=Fira+Sans&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.1/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+  <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
 </head>
 
 <body>
@@ -26,8 +28,15 @@
           <a class="MusicTop" href="#">Music</a>
           <a class="BooksTop" href="#">Books</a>
           <a class="ArtworksTop" href="#">Artworks</a>
+          <input type="text" placeholder="Search..">
         </ul>
       </nav>
+      <div class="Nav_Profile">
+        <li><img src="images/USER.png" alt="profile_picture" style="max-width:56px"></li>
+      </div>
+      <div class="User_Name">
+        <h5>Hi, Berna</h5>
+      </div>
     </header>
     <!-- Navigation Bar Section End -->
     <!-- ---------------------------------------------------------------------------- -->
@@ -118,7 +127,7 @@
         <section class="Stats">
           <div class="Your_Statistics">
             <h4>Your Statistics</h4>
-            <table style="width:100%">
+            <table style="max-width: 35vw">
               <tbody>
                 <tr style="height: 55px">
                   <td style="width:20%"><i class="bi bi-film"></i></td>
@@ -133,6 +142,7 @@
                 <tr style="height: 55px">
                   <td style="width:20%"><i class="bi bi-music-note-beamed"></i></td>
                   <td style="width:40%">2774<i class="bi bi-heart"></i></td>
+                  <td></td>
                 </tr>
                 <tr style="height: 55px">
                   <td style="width:20%"><i class="bi bi-book"></i></td>
@@ -142,6 +152,7 @@
                 <tr style="height: 55px">
                   <td style="width:20%"><i class="bi bi-brush"></i></td>
                   <td style="width:40%">49<i class="bi bi-heart"></i></td>
+                  <td></td>
                 </tr>
               </tbody>
             </table>
@@ -160,22 +171,89 @@
       <h4>Movies</h4>
       <div class="Featured_Movies_Row">
         <h5>Featured Movies</h5>
-        <div class="row_posters">
-          <img src="images/large-movie1.jpg" alt="" class="row_poster row_posterLarge">
-          <img src="images/large-movie2.jpg" alt="" class="row_poster row_posterLarge">
-          <img src="images/large-movie3.jpg" alt="" class="row_poster row_posterLarge">
-          <img src="images/large-movie4.jpg" alt="" class="row_poster row_posterLarge">
-          <img src="images/large-movie5.jpg" alt="" class="row_poster row_posterLarge">
-          <img src="images/large-movie6.jpg" alt="" class="row_poster row_posterLarge">
-          <img src="images/large-movie7.jpg" alt="" class="row_poster row_posterLarge">
-          <img src="images/large-movie1.jpg" alt="" class="row_poster row_posterLarge">
-          <img src="images/large-movie2.jpg" alt="" class="row_poster row_posterLarge">
-          <img src="images/large-movie3.jpg" alt="" class="row_poster row_posterLarge">
-          <img src="images/large-movie4.jpg" alt="" class="row_poster row_posterLarge">
-          <img src="images/large-movie5.jpg" alt="" class="row_poster row_posterLarge">
-          <img src="images/large-movie6.jpg" alt="" class="row_poster row_posterLarge">
-          <img src="images/large-movie7.jpg" alt="" class="row_poster row_posterLarge">
-          <img src="images/large-movie4.jpg" alt="" class="row_poster row_posterLarge">
+        <!-- Slider main container -->
+        <div class="swiper">
+          <!-- Additional required wrapper -->
+          <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide">
+              <a class="thumbSlide" href="#">
+                <img class="thumbSlide_image"
+                  src="https://occ-0-1433-1432.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABUqwomVyMFsby9zeXLLnkfv744mKCzQDWL7rUDhbwg89bpT-V7qYoW-NNfjFaG3nFcDWu-U49vpUFB_L4njc2GFl6l60Efb4oT-_0e3oi3Dh8nwyLZhG2ciBHGUnRMB_J-D2jQk2Qz_WM4n8A_8b8ZqFDpj80B6KJ9T2bXR7rYcl0M8MaDCsR68.jpg?r=93f"
+                  alt="The Queen's Gambit">
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <a class="thumbSlide" href="#">
+                <img class="thumbSlide_image"
+                  src="https://occ-0-1433-1432.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABSEl8LWx4tMJIM9Atm3F1Y49Uq6X01tnDe8gPA6d84-gQ767saz9z7Jxj9sFozuI8bcM2vlxeP9IPq3Aa7jxLlkMu8JGjizRLblNEcmD7g-Z2NeZvkvV5nWF9DmJ.jpg?r=393" alt="Dark">
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <a class="thumbSlide" href="#">
+                <img class="thumbSlide_image" src="https://occ-0-1433-1432.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABRItzLGWEqRojd0SS5lkLN56bRwYGctgeybCwPWq-zs_UwEXKX_4CsXsMlWupAdBB5D7KDN-8RzuCvqzTf5Bvo_HQmI.webp?r=3ad" alt="Suits">
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <a class="thumbSlide" href="#">
+                <img class="thumbSlide_image" src="https://occ-0-1433-1432.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABUjsKDiaKwLmrV662pwmVKEtRmbJI-s8M9ojCqr2QEdnPUJPX86RP-n9IGXxGcaHWkTf-cwz5e4kBLN3jYLM7HuBfYA.webp?r=01d"
+                  alt="Breaking Bad">
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <a class="thumbSlide" href="#">
+                <img class="thumbSlide_image"
+                  src="https://occ-0-1433-1432.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABdPrypf33QcVWc0DHxX7rDoTSbX7EgHSJd_VDlwIr81A40ua4l2F_esQS1u4zB9SkN5TAGO1Bw0SmoEqTICKfx9vbRu-qdKh9KGWuRLasXOrCIUpEYnMffVoebRS.jpg?r=d3b"
+                  alt="The Crown">
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <a class="thumbSlide" href="#">
+                <img class="thumbSlide_image"
+                  src="https://occ-0-3467-1490.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABfrj0Nfwz9Y5OFq7NWdm57bfHeuFJMgzb_-44MFWdPWGZxYW36c_6m6vvMJn0f4aUT_6-p_c9oEqMNnBNn0bu-VdwhTqudCVG_95XQOuhPfXI8sEzB8FwkmAzqKTqEf3BUNjOIdkilmg3NIjKhrHv9XqRcON9w.jpg?r=c00"
+                  alt="Arcane">
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <a class="thumbSlide" href="#">
+                <img class="thumbSlide_image" src="https://occ-0-3467-1490.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABbe_n2UoDaMNi_J4mbCxeo0FLho91XVwGctwIelCCWvOcqrLODUL6FnSVcRgeTTKEGiZlhV3HhZnbUWV8MpDxBK7U18.webp?r=1b2"
+                  alt="How I Met Your Mother">
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <a class="thumbSlide" href="#">
+                <img class="thumbSlide_image" src="https://occ-0-3467-1490.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABWfAKVpzKqI0PO_TSVOGsnGcQR76Rih_GZVn1S1ycQct4ezRv_V4FAsr9td-Yjb9R8TUX5S1kn3gkP1VZRSYnWA2i0M.webp?r=75b" alt="Friends">
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <a class="thumbSlide" href="#">
+                <img class="thumbSlide_image" src="https://occ-0-3467-1490.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABR3tWi_x4S_BwzbuA-n08sa8Ca2_aIqIpoREVWIeQfFL-GvYxjTkW8NQNXCajLwGpk0ddmyqTfjx8Pt-vXV5j11_RAE.webp?r=b84"
+                  alt="Avatar: The Last Air Bender">
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <a class="thumbSlide" href="#">
+                <img class="thumbSlide_image" src="https://occ-0-3467-1490.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABY79uxZqHSMYhREIhxnTxsrE0tBZFBjPbPliOwxU5gHfBWwt4dJD6U5z3oezpk1csqdLqAly_NKe4BbjHT63yI_JZIA.webp?r=dcb" alt="One Day">
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <a class="thumbSlide" href="#">
+                <img class="thumbSlide_image" src="https://occ-0-3467-1490.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABV3tMufOApgez2Vlk2VHO6tsov_XL541UzFDY4OuJswfyMeyV-ixTogCjvN6enUAIfEJonDQ1cYJusN92MJPOi4CYJI.webp?r=97d"
+                  alt="Weightlifting Fairy Kim Bok-Joo">
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <a class="thumbSlide" href="#">
+                <img class="thumbSlide_image"
+                  src="https://occ-0-3467-1490.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABeIBurFq0j6MHNKTYyHlv4noD63pgDQw5Av58iBpybkRwDhGXrnNZAhkD9iO07hlQkzH5CZ3HCKj93Xaa0k-G5UinqcCpvw2XkIrIJbb8bwoWJfOZCCX_88udSLI.jpg?r=682"
+                  alt="Itaewon Class">
+              </a>
+            </div>
+          </div>
+
+          <!-- If we need navigation buttons -->
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
         </div>
       </div>
 
@@ -201,7 +279,7 @@
 
       </div>
 
-      <div class="Coming Soon_Row">
+      <div class="Coming_Soon_Row">
         <h5>Coming Soon</h5>
         <div class="row_posters">
           <img src="images/small-movie1.jpg" alt="" class="row_poster">
@@ -443,6 +521,38 @@
   </div>
   </div>
 </body>
+
+
+<script type="text/javascript">
+  const swiper = new Swiper('.swiper', {
+    // Optional parameters
+    direction: 'horizontal',
+    loop: true,
+
+    spaceBetween: 15,
+    slidesPerView: 2,
+    slidesPerGroup: 2,
+
+    speed: 500,
+    // Navigation arrows
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+    breakpoints: {
+      640: {
+        slidesPerView: 4,
+        slidesPerGroup: 3,
+
+      },
+
+      1000: {
+        slidesPerView: 6,
+        slidesPerGroup: 4,
+      }
+    }
+  });
+</script>
 
 
 <script type="text/javascript">
