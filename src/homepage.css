@@ -57,26 +57,23 @@ header {
 /*START: Navigation Menu*/
 .Logo_Container, .Nav_Links {
   display: flex;
-  position: relative;
-}
-
-.Logo_Container {
-  flex: 1;
-  padding-top: 20px;
-  justify-content: flex-start;
-  position: absolute;
 }
 
 .Logo_Container img {
-  width: 220px;
+  flex: 1;
+  padding-top: 20px;
+  justify-content: flex-start;
+  min-width: 220px;
   height: auto;
   max-width: 120%;
   object-fit: contain;
 }
 
 nav {
-  margin-top: 20px;
-  margin-left: 15%;
+  flex: 2;
+  margin-top: 25px;
+  min-width: 15vw;
+  margin-left: 2vw;
 }
 
 a {
@@ -92,7 +89,7 @@ nav ul a {
   width: 100px;
   height: 35px;
   padding: 5px;
-  margin-left: 20px;
+  margin-right: 20px;
   box-sizing: border-box;
   color: var(--text-white);
   border-radius: 15px;
@@ -122,11 +119,12 @@ nav ul .ArtworksTop {
 
 /* Style the search box inside the navigation bar */
 nav ul input[type=text] {
+  flex: 1;
   float: right;
   padding: 5px 18px 5px 18px;
   border: 3px solid var(--text-white);
   border-radius: 15px;
-  margin-left: 5%;
+  margin-left: 3vw;
   min-width: 350px;
   height: 35px;
   color: var(--text-white);
@@ -137,20 +135,22 @@ nav ul input[type=text] {
 }
 
 .Nav_Profile {
-  margin-left: 3%;
+  display: flex;
+  align-items: center;
+}
+
+.Nav_Profile img {
+  flex: 1;
+  margin-left: 3vw;
+}
+
+.Nav_Profile h5 {
+  flex: 1;
+  margin-left: 1vw;
 }
 
 .Nav_Profile li {
   list-style-type: none;
-}
-
-.User_Name {
-  margin-left: 1%;
-}
-
-.User_Name h5 {
-  background: none;
-  font-size: 18px;
 }
 /*END: Navigation Menu*/
 /*-----------------------------------------------------*/
@@ -224,7 +224,7 @@ nav ul input[type=text] {
   color: var(--text-white);
 
   text-align: center;
-  padding-top: 6px;
+  padding-top: 5px;
 }
 
 .Daily_Shuffle .Cards {
@@ -244,6 +244,7 @@ of the box on hover (remove perspective if you don't want the 3D effect */
 .Flip_Card_Music,
 .Flip_Card_Book,
 .Flip_Card_Artwork {
+  flex: 2;
   background-color: transparent;
   width: 170px;
   height: 250px;
@@ -299,7 +300,7 @@ of the box on hover (remove perspective if you don't want the 3D effect */
   text-align: left;
   font-size: 20px;
   background: none;
-  transform: rotate(-90deg) translate(-18%,0);
+  transform: rotate(-90deg) translate(-23%,0);
   transform-origin: right bottom;
   border-radius: 10px;
 }
@@ -425,7 +426,7 @@ table td {
 }
 
 .bi-eye {
-  padding-left: ;
+  padding-left: 10px;
   width: 15px;
 }
 
@@ -565,6 +566,9 @@ table td {
   border-radius: 15px;
 }
 
+
+
+/*SWIPER*/
 .swiper {
   max-width: 100%;
   max-height: 550px;
@@ -584,7 +588,6 @@ table td {
   overflow: hidden;
 
   transition: transform 450ms;
-  border: 3px solid var(--movies);
   box-sizing: border-box;
   border-radius: 5px;
 }
@@ -601,7 +604,8 @@ table td {
   top: 0;
   bottom: 0;
   margin: 0;
-  background-color: rgba(20, 20, 20, 0.5);
+
+  border-radius: 5px;
   display: flex;
 }
 
@@ -625,6 +629,50 @@ table td {
   transform: scale(0.6);
 }
 
+.Movies .swiper-slide img {
+  border: 4px solid var(--movies);
+}
+
+.TV_Series .swiper-slide img {
+  border: 4px solid var(--tvSeries);
+}
+
+.Music .swiper-slide img {
+  border: 4px solid var(--music);
+}
+
+.Books .swiper-slide img {
+  border: 4px solid var(--books);
+}
+
+.Artworks .swiper-slide img {
+  border: 4px solid var(--artworks);
+}
+
+.Movies .swiper .swiper-button-prev,
+.Movies .swiper .swiper-button-next {
+  background-color: rgba(102, 255, 246, 0.3);
+}
+
+.TV_Series .swiper .swiper-button-prev,
+.TV_Series .swiper .swiper-button-next {
+  background-color: rgba(167, 198, 255, 0.3);
+}
+
+.Music .swiper .swiper-button-prev,
+.Music .swiper .swiper-button-next {
+  background-color: rgba(109, 82, 212, 0.3);
+}
+
+.Books .swiper .swiper-button-prev,
+.Books .swiper .swiper-button-next {
+  background-color: rgba(160, 58, 219, 0.3);
+}
+
+.Artworks .swiper .swiper-button-prev,
+.Artworks .swiper .swiper-button-next {
+  background-color: rgba(255, 79, 162, 0.3);
+}
 
 /*TV SERIES*/
 .TV_Series h4 {
@@ -731,13 +779,13 @@ table td {
 }
 
 .Music .caption {
-  margin-top: 10px;
+  margin-top: 15px;
   padding: 8px 5px;
   color: #fff;
   font-size: 14px;
 
   box-sizing: border-box;
-  border: 1px solid var(--movies);
+  border: 2px solid var(--music);
   border-radius: 15px;
 }
 

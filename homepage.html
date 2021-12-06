@@ -19,26 +19,26 @@
     <!-- Navigation Bar Section Start -->
     <header>
       <div class="Logo_Container">
-        <img src="images/I-SPACE_Logo.png" alt="Logo">
+        <a href="homepage.html"><img src="images/I-SPACE_Logo.png" alt="Logo"></a>
       </div>
       <nav>
         <ul class="Nav_Links">
-          <a class="MoviesTop" href="#">Movies</a>
-          <a class="TVSeriesTop" href="#">TV Series</a>
-          <a class="MusicTop" href="#">Music</a>
-          <a class="BooksTop" href="#">Books</a>
-          <a class="ArtworksTop" href="#">Artworks</a>
+          <a class="MoviesTop" href="homepage.html#movies">Movies</a>
+          <a class="TVSeriesTop" href="homepage.html#tvSeries">TV Series</a>
+          <a class="MusicTop" href="homepage.html#music">Music</a>
+          <a class="BooksTop" href="homepage.html#books">Books</a>
+          <a class="ArtworksTop" href="homepage.html#artworks">Artworks</a>
           <input type="text" placeholder="Search..">
         </ul>
       </nav>
       <div class="Nav_Profile">
-        <li><img src="images/USER.png" alt="profile_picture" style="max-width:56px"></li>
-      </div>
-      <div class="User_Name">
+        <a class="Profile" href="userProfile.html"><img src="images/USER.png" alt="profile_picture" style="max-width:56px"></a>
         <h5>Hi, Berna</h5>
       </div>
     </header>
     <!-- Navigation Bar Section End -->
+
+
     <!-- ---------------------------------------------------------------------------- -->
     <!-- Daily Shuffle Section Start -->
     <div class="Homepage_Container">
@@ -168,7 +168,7 @@
     <!-- --------------------------------------------------------------------------- -->
     <!-- Movies Section Start -->
     <div class="Movies">
-      <h4>Movies</h4>
+      <h4 id="movies">Movies</h4>
       <div class="Featured_Movies_Row">
         <h5>Featured Movies</h5>
         <!-- Slider main container -->
@@ -439,7 +439,7 @@
     <!-- --------------------------------------------------------------------------- -->
     <!-- TV Series Section Start -->
     <div class="TV_Series">
-      <h4>TV Series</h4>
+      <h4 id="tvSeries">TV Series</h4>
       <div class="Featured_TVSeries_Row">
         <h5>Featured TV Series</h5>
         <div class="swiper">
@@ -709,7 +709,7 @@
     <!-- --------------------------------------------------------------------------- -->
     <!-- Music Section Start -->
     <div class="Music">
-      <h4>Music</h4>
+      <h4 id="music">Music</h4>
       <div class="From_Your_Liked_Songs_Row">
         <h5>From Your Liked Songs</h5>
         <div class="swiper">
@@ -718,82 +718,62 @@
             <!-- Slides -->
             <div class="swiper-slide">
               <a class="thumbSlide" href="#">
-                <img class="thumbSlide_image"
-                  src="https://i.scdn.co/image/ab67616d00001e028cffb7c6c40759eaf8a5a142"
-                  alt="Angel's Like You - Miley Cyrus">
-                  <div class="caption" style="text-align:center">Angel's Like You<br>Miley Cyrus</div>
+                <img class="thumbSlide_image" src="https://i.scdn.co/image/ab67616d00001e028cffb7c6c40759eaf8a5a142" alt="Angel's Like You - Miley Cyrus">
+                <div class="caption" style="text-align:center">Angel's Like You<br>Miley Cyrus</div>
               </a>
             </div>
             <div class="swiper-slide">
               <a class="thumbSlide" href="#">
-                <img class="thumbSlide_image"
-                  src="https://i.scdn.co/image/ab67616d00001e02aa597e50829169e6994eb403"
-                  alt="Enemy - Imagine Dragons">
-                  <div class="caption" style="text-align:center">Enemy<br>Imagine Dragons</div>
+                <img class="thumbSlide_image" src="https://i.scdn.co/image/ab67616d00001e02aa597e50829169e6994eb403" alt="Enemy - Imagine Dragons">
+                <div class="caption" style="text-align:center">Enemy<br>Imagine Dragons</div>
               </a>
             </div>
             <div class="swiper-slide">
               <a class="thumbSlide" href="#">
-                <img class="thumbSlide_image"
-                  src="https://i.scdn.co/image/ab67616d00001e02c6b577e4c4a6d326354a89f7"
-                  alt="Adele - Oh My God">
-                  <div class="caption" style="text-align:center">Oh My God<br>Adele</div>
+                <img class="thumbSlide_image" src="https://i.scdn.co/image/ab67616d00001e02c6b577e4c4a6d326354a89f7" alt="Adele - Oh My God">
+                <div class="caption" style="text-align:center">Oh My God<br>Adele</div>
               </a>
             </div>
             <div class="swiper-slide">
               <a class="thumbSlide" href="#">
-                <img class="thumbSlide_image"
-                  src="https://i.scdn.co/image/ab67616d00001e02889741e4d5cfc40e4610770c"
-                  alt="Everything Everything - We Slept In Paris">
-                  <div class="caption" style="text-align:center">We Slept In Paris<br>Everything Everything</div>
+                <img class="thumbSlide_image" src="https://i.scdn.co/image/ab67616d00001e02889741e4d5cfc40e4610770c" alt="Everything Everything - We Slept In Paris">
+                <div class="caption" style="text-align:center">We Slept In Paris<br>Everything Everything</div>
               </a>
             </div>
             <div class="swiper-slide">
               <a class="thumbSlide" href="#">
-                <img class="thumbSlide_image"
-                  src="https://i.scdn.co/image/ab67616d00001e02fef9c2ac08cda1df87f4a28c"
-                  alt="Kovacs - Freakshow">
-                  <div class="caption" style="text-align:center">Love Song<br>Kovacs</div>
+                <img class="thumbSlide_image" src="https://i.scdn.co/image/ab67616d00001e02fef9c2ac08cda1df87f4a28c" alt="Kovacs - Freakshow">
+                <div class="caption" style="text-align:center">Love Song<br>Kovacs</div>
               </a>
             </div>
             <div class="swiper-slide">
               <a class="thumbSlide" href="#">
-                <img class="thumbSlide_image"
-                  src="https://i.scdn.co/image/ab67616d00001e0223533fedac2927315c55d34b"
-                  alt="ABBA - Don't Shut Me Down">
-                  <div class="caption" style="text-align:center">Don't Shut Me Down<br>ABBA</div>
+                <img class="thumbSlide_image" src="https://i.scdn.co/image/ab67616d00001e0223533fedac2927315c55d34b" alt="ABBA - Don't Shut Me Down">
+                <div class="caption" style="text-align:center">Don't Shut Me Down<br>ABBA</div>
               </a>
             </div>
             <div class="swiper-slide">
               <a class="thumbSlide" href="#">
-                <img class="thumbSlide_image"
-                  src="https://i.scdn.co/image/ab67616d00001e02340aba0dcdba43d89f6a037a"
-                  alt="AMY - Amy Forever">
-                  <div class="caption" style="text-align:center">Amy Winehouse<br>What Is It About Men</div>
+                <img class="thumbSlide_image" src="https://i.scdn.co/image/ab67616d00001e02340aba0dcdba43d89f6a037a" alt="AMY - Amy Forever">
+                <div class="caption" style="text-align:center">Amy Winehouse<br>What Is It About Men</div>
               </a>
             </div>
             <div class="swiper-slide">
               <a class="thumbSlide" href="#">
-                <img class="thumbSlide_image"
-                  src="https://i.scdn.co/image/ab67616d00001e02509ce7a71fc55b86a360a410"
-                  alt="Madonna - La Isla Bonita">
-                  <div class="caption" style="text-align:center">La Isla Bonita<br>Madonna</div>
+                <img class="thumbSlide_image" src="https://i.scdn.co/image/ab67616d00001e02509ce7a71fc55b86a360a410" alt="Madonna - La Isla Bonita">
+                <div class="caption" style="text-align:center">La Isla Bonita<br>Madonna</div>
               </a>
             </div>
             <div class="swiper-slide">
               <a class="thumbSlide" href="#">
-                <img class="thumbSlide_image"
-                  src="https://i.scdn.co/image/ab67616d00001e02dbc892b8194e35ca3524e767"
-                  alt="Maneskin - Torn a Casa">
-                  <div class="caption" style="text-align:center">Torn a Casa<br>Maneskin</div>
+                <img class="thumbSlide_image" src="https://i.scdn.co/image/ab67616d00001e02dbc892b8194e35ca3524e767" alt="Maneskin - Torn a Casa">
+                <div class="caption" style="text-align:center">Torn a Casa<br>Maneskin</div>
               </a>
             </div>
             <div class="swiper-slide">
               <a class="thumbSlide" href="#">
-                <img class="thumbSlide_image"
-                  src="https://i.scdn.co/image/ab67616d00001e0241f373525493d40a9c3c3f52"
-                  alt="Jimmy Durante - Smile">
-                  <div class="caption" style="text-align:center">Smile<br>Jimmy Durante</div>
+                <img class="thumbSlide_image" src="https://i.scdn.co/image/ab67616d00001e0241f373525493d40a9c3c3f52" alt="Jimmy Durante - Smile">
+                <div class="caption" style="text-align:center">Smile<br>Jimmy Durante</div>
               </a>
             </div>
           </div>
@@ -811,7 +791,7 @@
     <!-- --------------------------------------------------------------------------- -->
     <!-- Books Section Start -->
     <div class="Books">
-      <h4>Books</h4>
+      <h4 id="books">Books</h4>
       <div class="Best_Sellers_Row">
         <h5>Best Sellers</h5>
         <div class="swiper">
@@ -820,72 +800,52 @@
             <!-- Slides -->
             <div class="swiper-slide">
               <a class="thumbSlide" href="#">
-                <img class="thumbSlide_image"
-                  src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1429638085l/4929.jpg"
-                  alt="Haruki Murakami - Kafka on the Shore">
+                <img class="thumbSlide_image" src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1429638085l/4929.jpg" alt="Haruki Murakami - Kafka on the Shore">
               </a>
             </div>
             <div class="swiper-slide">
               <a class="thumbSlide" href="#">
-                <img class="thumbSlide_image"
-                  src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1630460042l/11297._SY475_.jpg"
-                  alt="Haruki Murakami - Norwegian Wood">
+                <img class="thumbSlide_image" src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1630460042l/11297._SY475_.jpg" alt="Haruki Murakami - Norwegian Wood">
               </a>
             </div>
             <div class="swiper-slide">
               <a class="thumbSlide" href="#">
-                <img class="thumbSlide_image"
-                  src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1483103331l/10357575.jpg"
-                  alt="Haruki Murakami - 1Q84">
+                <img class="thumbSlide_image" src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1483103331l/10357575.jpg" alt="Haruki Murakami - 1Q84">
               </a>
             </div>
             <div class="swiper-slide">
               <a class="thumbSlide" href="#">
-                <img class="thumbSlide_image"
-                  src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1533141634l/41022133._SY475_.jpg"
-                  alt="Haruki Murakami - Norwegian Wood">
+                <img class="thumbSlide_image" src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1533141634l/41022133._SY475_.jpg" alt="Haruki Murakami - Norwegian Wood">
               </a>
             </div>
             <div class="swiper-slide">
               <a class="thumbSlide" href="#">
-                <img class="thumbSlide_image"
-                  src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1630460042l/11297._SY475_.jpg"
-                  alt="Haruki Murakami - Colorless Tsukuru Tazaki">
+                <img class="thumbSlide_image" src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1630460042l/11297._SY475_.jpg" alt="Haruki Murakami - Colorless Tsukuru Tazaki">
               </a>
             </div>
             <div class="swiper-slide">
               <a class="thumbSlide" href="#">
-                <img class="thumbSlide_image"
-                  src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1327881361l/320.jpg"
-                  alt="Gabriel Garcia Marquez - One Hundred Years of Solitude">
+                <img class="thumbSlide_image" src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1327881361l/320.jpg" alt="Gabriel Garcia Marquez - One Hundred Years of Solitude">
               </a>
             </div>
             <div class="swiper-slide">
               <a class="thumbSlide" href="#">
-                <img class="thumbSlide_image"
-                  src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1320512032l/5947099.jpg"
-                  alt="Gabriel Garcia Marquez - Memories of My Melancholy Whores">
+                <img class="thumbSlide_image" src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1320512032l/5947099.jpg" alt="Gabriel Garcia Marquez - Memories of My Melancholy Whores">
               </a>
             </div>
             <div class="swiper-slide">
               <a class="thumbSlide" href="#">
-                <img class="thumbSlide_image"
-                  src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1536376800l/9712.jpg"
-                  alt="Gabriel Garcia Marquez - Love in the Time of Cholera">
+                <img class="thumbSlide_image" src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1536376800l/9712.jpg" alt="Gabriel Garcia Marquez - Love in the Time of Cholera">
               </a>
             </div>
             <div class="swiper-slide">
               <a class="thumbSlide" href="#">
-                <img class="thumbSlide_image"
-                  src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1553959324l/23878._SY475_.jpg"
-                  alt="Gabriel Garcia Marquez - Chronicle of a Death Foretold">
+                <img class="thumbSlide_image" src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1553959324l/23878._SY475_.jpg" alt="Gabriel Garcia Marquez - Chronicle of a Death Foretold">
               </a>
             </div>
             <div class="swiper-slide">
               <a class="thumbSlide" href="#">
-                <img class="thumbSlide_image"
-                  src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1409595968l/929.jpg"
-                  alt="Arthur Golden - Memoirs of a Geisha">
+                <img class="thumbSlide_image" src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1409595968l/929.jpg" alt="Arthur Golden - Memoirs of a Geisha">
               </a>
             </div>
           </div>
@@ -904,72 +864,52 @@
             <!-- Slides -->
             <div class="swiper-slide">
               <a class="thumbSlide" href="#">
-                <img class="thumbSlide_image"
-                  src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1429638085l/4929.jpg"
-                  alt="Haruki Murakami - Kafka on the Shore">
+                <img class="thumbSlide_image" src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1429638085l/4929.jpg" alt="Haruki Murakami - Kafka on the Shore">
               </a>
             </div>
             <div class="swiper-slide">
               <a class="thumbSlide" href="#">
-                <img class="thumbSlide_image"
-                  src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1630460042l/11297._SY475_.jpg"
-                  alt="Haruki Murakami - Norwegian Wood">
+                <img class="thumbSlide_image" src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1630460042l/11297._SY475_.jpg" alt="Haruki Murakami - Norwegian Wood">
               </a>
             </div>
             <div class="swiper-slide">
               <a class="thumbSlide" href="#">
-                <img class="thumbSlide_image"
-                  src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1483103331l/10357575.jpg"
-                  alt="Haruki Murakami - 1Q84">
+                <img class="thumbSlide_image" src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1483103331l/10357575.jpg" alt="Haruki Murakami - 1Q84">
               </a>
             </div>
             <div class="swiper-slide">
               <a class="thumbSlide" href="#">
-                <img class="thumbSlide_image"
-                  src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1533141634l/41022133._SY475_.jpg"
-                  alt="Haruki Murakami - Norwegian Wood">
+                <img class="thumbSlide_image" src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1533141634l/41022133._SY475_.jpg" alt="Haruki Murakami - Norwegian Wood">
               </a>
             </div>
             <div class="swiper-slide">
               <a class="thumbSlide" href="#">
-                <img class="thumbSlide_image"
-                  src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1630460042l/11297._SY475_.jpg"
-                  alt="Haruki Murakami - Colorless Tsukuru Tazaki">
+                <img class="thumbSlide_image" src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1630460042l/11297._SY475_.jpg" alt="Haruki Murakami - Colorless Tsukuru Tazaki">
               </a>
             </div>
             <div class="swiper-slide">
               <a class="thumbSlide" href="#">
-                <img class="thumbSlide_image"
-                  src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1327881361l/320.jpg"
-                  alt="Gabriel Garcia Marquez - One Hundred Years of Solitude">
+                <img class="thumbSlide_image" src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1327881361l/320.jpg" alt="Gabriel Garcia Marquez - One Hundred Years of Solitude">
               </a>
             </div>
             <div class="swiper-slide">
               <a class="thumbSlide" href="#">
-                <img class="thumbSlide_image"
-                  src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1320512032l/5947099.jpg"
-                  alt="Gabriel Garcia Marquez - Memories of My Melancholy Whores">
+                <img class="thumbSlide_image" src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1320512032l/5947099.jpg" alt="Gabriel Garcia Marquez - Memories of My Melancholy Whores">
               </a>
             </div>
             <div class="swiper-slide">
               <a class="thumbSlide" href="#">
-                <img class="thumbSlide_image"
-                  src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1536376800l/9712.jpg"
-                  alt="Gabriel Garcia Marquez - Love in the Time of Cholera">
+                <img class="thumbSlide_image" src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1536376800l/9712.jpg" alt="Gabriel Garcia Marquez - Love in the Time of Cholera">
               </a>
             </div>
             <div class="swiper-slide">
               <a class="thumbSlide" href="#">
-                <img class="thumbSlide_image"
-                  src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1553959324l/23878._SY475_.jpg"
-                  alt="Gabriel Garcia Marquez - Chronicle of a Death Foretold">
+                <img class="thumbSlide_image" src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1553959324l/23878._SY475_.jpg" alt="Gabriel Garcia Marquez - Chronicle of a Death Foretold">
               </a>
             </div>
             <div class="swiper-slide">
               <a class="thumbSlide" href="#">
-                <img class="thumbSlide_image"
-                  src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1409595968l/929.jpg"
-                  alt="Arthur Golden - Memoirs of a Geisha">
+                <img class="thumbSlide_image" src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1409595968l/929.jpg" alt="Arthur Golden - Memoirs of a Geisha">
               </a>
             </div>
           </div>
@@ -988,72 +928,52 @@
             <!-- Slides -->
             <div class="swiper-slide">
               <a class="thumbSlide" href="#">
-                <img class="thumbSlide_image"
-                  src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1429638085l/4929.jpg"
-                  alt="Haruki Murakami - Kafka on the Shore">
+                <img class="thumbSlide_image" src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1429638085l/4929.jpg" alt="Haruki Murakami - Kafka on the Shore">
               </a>
             </div>
             <div class="swiper-slide">
               <a class="thumbSlide" href="#">
-                <img class="thumbSlide_image"
-                  src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1630460042l/11297._SY475_.jpg"
-                  alt="Haruki Murakami - Norwegian Wood">
+                <img class="thumbSlide_image" src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1630460042l/11297._SY475_.jpg" alt="Haruki Murakami - Norwegian Wood">
               </a>
             </div>
             <div class="swiper-slide">
               <a class="thumbSlide" href="#">
-                <img class="thumbSlide_image"
-                  src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1483103331l/10357575.jpg"
-                  alt="Haruki Murakami - 1Q84">
+                <img class="thumbSlide_image" src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1483103331l/10357575.jpg" alt="Haruki Murakami - 1Q84">
               </a>
             </div>
             <div class="swiper-slide">
               <a class="thumbSlide" href="#">
-                <img class="thumbSlide_image"
-                  src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1533141634l/41022133._SY475_.jpg"
-                  alt="Haruki Murakami - Norwegian Wood">
+                <img class="thumbSlide_image" src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1533141634l/41022133._SY475_.jpg" alt="Haruki Murakami - Norwegian Wood">
               </a>
             </div>
             <div class="swiper-slide">
               <a class="thumbSlide" href="#">
-                <img class="thumbSlide_image"
-                  src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1630460042l/11297._SY475_.jpg"
-                  alt="Haruki Murakami - Colorless Tsukuru Tazaki">
+                <img class="thumbSlide_image" src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1630460042l/11297._SY475_.jpg" alt="Haruki Murakami - Colorless Tsukuru Tazaki">
               </a>
             </div>
             <div class="swiper-slide">
               <a class="thumbSlide" href="#">
-                <img class="thumbSlide_image"
-                  src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1327881361l/320.jpg"
-                  alt="Gabriel Garcia Marquez - One Hundred Years of Solitude">
+                <img class="thumbSlide_image" src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1327881361l/320.jpg" alt="Gabriel Garcia Marquez - One Hundred Years of Solitude">
               </a>
             </div>
             <div class="swiper-slide">
               <a class="thumbSlide" href="#">
-                <img class="thumbSlide_image"
-                  src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1320512032l/5947099.jpg"
-                  alt="Gabriel Garcia Marquez - Memories of My Melancholy Whores">
+                <img class="thumbSlide_image" src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1320512032l/5947099.jpg" alt="Gabriel Garcia Marquez - Memories of My Melancholy Whores">
               </a>
             </div>
             <div class="swiper-slide">
               <a class="thumbSlide" href="#">
-                <img class="thumbSlide_image"
-                  src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1536376800l/9712.jpg"
-                  alt="Gabriel Garcia Marquez - Love in the Time of Cholera">
+                <img class="thumbSlide_image" src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1536376800l/9712.jpg" alt="Gabriel Garcia Marquez - Love in the Time of Cholera">
               </a>
             </div>
             <div class="swiper-slide">
               <a class="thumbSlide" href="#">
-                <img class="thumbSlide_image"
-                  src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1553959324l/23878._SY475_.jpg"
-                  alt="Gabriel Garcia Marquez - Chronicle of a Death Foretold">
+                <img class="thumbSlide_image" src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1553959324l/23878._SY475_.jpg" alt="Gabriel Garcia Marquez - Chronicle of a Death Foretold">
               </a>
             </div>
             <div class="swiper-slide">
               <a class="thumbSlide" href="#">
-                <img class="thumbSlide_image"
-                  src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1409595968l/929.jpg"
-                  alt="Arthur Golden - Memoirs of a Geisha">
+                <img class="thumbSlide_image" src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1409595968l/929.jpg" alt="Arthur Golden - Memoirs of a Geisha">
               </a>
             </div>
           </div>
@@ -1070,7 +990,7 @@
     <!-- --------------------------------------------------------------------------- -->
     <!-- Artworks Section Start -->
     <div class="Artworks">
-      <h4>Artworks</h4>
+      <h4 id="artworks">Artworks</h4>
       <div class="Daily_Recommendations_Row">
         <h5>Daily Recommendations</h5>
         <div class="swiper">
@@ -1079,72 +999,52 @@
             <!-- Slides -->
             <div class="swiper-slide">
               <a class="thumbSlide" href="#">
-                <img class="thumbSlide_image"
-                  src="https://www.claudemonetgallery.org/thumbnail/81000/81119/mini_small/San-Giorgio-Maggiore-At-Dusk.jpg?ts=1459229076"
-                  alt="Monet - San Giorgio Maggiore At Dusk">
+                <img class="thumbSlide_image" src="https://www.claudemonetgallery.org/thumbnail/81000/81119/mini_small/San-Giorgio-Maggiore-At-Dusk.jpg?ts=1459229076" alt="Monet - San Giorgio Maggiore At Dusk">
               </a>
             </div>
             <div class="swiper-slide">
               <a class="thumbSlide" href="#">
-                <img class="thumbSlide_image"
-                  src="https://www.claudemonetgallery.org/thumbnail/119000/119338/mini_small/Argenteuil-Red-Boats.jpg?ts=1459229076"
-                  alt="Monet - Argenteuil">
+                <img class="thumbSlide_image" src="https://www.claudemonetgallery.org/thumbnail/119000/119338/mini_small/Argenteuil-Red-Boats.jpg?ts=1459229076" alt="Monet - Argenteuil">
               </a>
             </div>
             <div class="swiper-slide">
               <a class="thumbSlide" href="#">
-                <img class="thumbSlide_image"
-                  src="https://www.claudemonetgallery.org/thumbnail/81000/81443/mini_small/The-Walk-Woman-With-A-Parasol.jpg?ts=1459229076"
-                  alt="Monet - The Walk Woman With A Parasol">
+                <img class="thumbSlide_image" src="https://www.claudemonetgallery.org/thumbnail/81000/81443/mini_small/The-Walk-Woman-With-A-Parasol.jpg?ts=1459229076" alt="Monet - The Walk Woman With A Parasol">
               </a>
             </div>
             <div class="swiper-slide">
               <a class="thumbSlide" href="#">
-                <img class="thumbSlide_image"
-                  src="https://www.claudemonetgallery.org/thumbnail/81000/81455/mini_small/The-Water-Lily-Pond-Aka-Japanese-Bridge.jpg?ts=1459229076"
-                  alt="Monet - The Water Lily Pond Aka Japanese Bridge">
+                <img class="thumbSlide_image" src="https://www.claudemonetgallery.org/thumbnail/81000/81455/mini_small/The-Water-Lily-Pond-Aka-Japanese-Bridge.jpg?ts=1459229076" alt="Monet - The Water Lily Pond Aka Japanese Bridge">
               </a>
             </div>
             <div class="swiper-slide">
               <a class="thumbSlide" href="#">
-                <img class="thumbSlide_image"
-                  src="https://www.claudemonetgallery.org/thumbnail/80000/80717/mini_small/Boulevard-Des-Capucines.jpg?ts=1476266302"
-                  alt="Monet - Boulevard Des Capucines">
+                <img class="thumbSlide_image" src="https://www.claudemonetgallery.org/thumbnail/80000/80717/mini_small/Boulevard-Des-Capucines.jpg?ts=1476266302" alt="Monet - Boulevard Des Capucines">
               </a>
             </div>
             <div class="swiper-slide">
               <a class="thumbSlide" href="#">
-                <img class="thumbSlide_image"
-                  src="https://www.claudemonetgallery.org/thumbnail/98000/98601/mini_small/Terrace-At-The-Seaside,-Sainte-Adresse.jpg?ts=1459229076"
-                  alt="Monet - Terrace at the Seaside, Sainte-Adresse">
+                <img class="thumbSlide_image" src="https://www.claudemonetgallery.org/thumbnail/98000/98601/mini_small/Terrace-At-The-Seaside,-Sainte-Adresse.jpg?ts=1459229076" alt="Monet - Terrace at the Seaside, Sainte-Adresse">
               </a>
             </div>
             <div class="swiper-slide">
               <a class="thumbSlide" href="#">
-                <img class="thumbSlide_image"
-                  src="https://www.claudemonetgallery.org/thumbnail/216000/216772/mini_small/Bathing-At-La-Grenouilliere-1869.jpg?ts=1459229076"
-                  alt="Monet - Bathing at la Grenouilliere 1869">
+                <img class="thumbSlide_image" src="https://www.claudemonetgallery.org/thumbnail/216000/216772/mini_small/Bathing-At-La-Grenouilliere-1869.jpg?ts=1459229076" alt="Monet - Bathing at la Grenouilliere 1869">
               </a>
             </div>
             <div class="swiper-slide">
               <a class="thumbSlide" href="#">
-                <img class="thumbSlide_image"
-                  src="https://www.claudemonetgallery.org/thumbnail/81000/81302/mini_small/The-Magpie.jpg?ts=1459229076"
-                  alt="Monet - The Magpie">
+                <img class="thumbSlide_image" src="https://www.claudemonetgallery.org/thumbnail/81000/81302/mini_small/The-Magpie.jpg?ts=1459229076" alt="Monet - The Magpie">
               </a>
             </div>
             <div class="swiper-slide">
               <a class="thumbSlide" href="#">
-                <img class="thumbSlide_image"
-                  src="https://www.claudemonetgallery.org/thumbnail/80000/80924/mini_small/Jeanne-Marguerite-Lecadre-In-The-Garden.jpg?ts=1459229076"
-                  alt="Monet - Jeanne Marguerite Lecadre In The Garden">
+                <img class="thumbSlide_image" src="https://www.claudemonetgallery.org/thumbnail/80000/80924/mini_small/Jeanne-Marguerite-Lecadre-In-The-Garden.jpg?ts=1459229076" alt="Monet - Jeanne Marguerite Lecadre In The Garden">
               </a>
             </div>
             <div class="swiper-slide">
               <a class="thumbSlide" href="#">
-                <img class="thumbSlide_image"
-                  src="https://www.claudemonetgallery.org/thumbnail/81000/81430/mini_small/The-Tulleries.jpg?ts=1459229076"
-                  alt="Monet - The Tulleries">
+                <img class="thumbSlide_image" src="https://www.claudemonetgallery.org/thumbnail/81000/81430/mini_small/The-Tulleries.jpg?ts=1459229076" alt="Monet - The Tulleries">
               </a>
             </div>
           </div>
@@ -1163,72 +1063,52 @@
             <!-- Slides -->
             <div class="swiper-slide">
               <a class="thumbSlide" href="#">
-                <img class="thumbSlide_image"
-                  src="https://www.claudemonetgallery.org/thumbnail/81000/81119/mini_small/San-Giorgio-Maggiore-At-Dusk.jpg?ts=1459229076"
-                  alt="Monet - San Giorgio Maggiore At Dusk">
+                <img class="thumbSlide_image" src="https://www.claudemonetgallery.org/thumbnail/81000/81119/mini_small/San-Giorgio-Maggiore-At-Dusk.jpg?ts=1459229076" alt="Monet - San Giorgio Maggiore At Dusk">
               </a>
             </div>
             <div class="swiper-slide">
               <a class="thumbSlide" href="#">
-                <img class="thumbSlide_image"
-                  src="https://www.claudemonetgallery.org/thumbnail/119000/119338/mini_small/Argenteuil-Red-Boats.jpg?ts=1459229076"
-                  alt="Monet - Argenteuil">
+                <img class="thumbSlide_image" src="https://www.claudemonetgallery.org/thumbnail/119000/119338/mini_small/Argenteuil-Red-Boats.jpg?ts=1459229076" alt="Monet - Argenteuil">
               </a>
             </div>
             <div class="swiper-slide">
               <a class="thumbSlide" href="#">
-                <img class="thumbSlide_image"
-                  src="https://www.claudemonetgallery.org/thumbnail/81000/81443/mini_small/The-Walk-Woman-With-A-Parasol.jpg?ts=1459229076"
-                  alt="Monet - The Walk Woman With A Parasol">
+                <img class="thumbSlide_image" src="https://www.claudemonetgallery.org/thumbnail/81000/81443/mini_small/The-Walk-Woman-With-A-Parasol.jpg?ts=1459229076" alt="Monet - The Walk Woman With A Parasol">
               </a>
             </div>
             <div class="swiper-slide">
               <a class="thumbSlide" href="#">
-                <img class="thumbSlide_image"
-                  src="https://www.claudemonetgallery.org/thumbnail/81000/81455/mini_small/The-Water-Lily-Pond-Aka-Japanese-Bridge.jpg?ts=1459229076"
-                  alt="Monet - The Water Lily Pond Aka Japanese Bridge">
+                <img class="thumbSlide_image" src="https://www.claudemonetgallery.org/thumbnail/81000/81455/mini_small/The-Water-Lily-Pond-Aka-Japanese-Bridge.jpg?ts=1459229076" alt="Monet - The Water Lily Pond Aka Japanese Bridge">
               </a>
             </div>
             <div class="swiper-slide">
               <a class="thumbSlide" href="#">
-                <img class="thumbSlide_image"
-                  src="https://www.claudemonetgallery.org/thumbnail/80000/80717/mini_small/Boulevard-Des-Capucines.jpg?ts=1476266302"
-                  alt="Monet - Boulevard Des Capucines">
+                <img class="thumbSlide_image" src="https://www.claudemonetgallery.org/thumbnail/80000/80717/mini_small/Boulevard-Des-Capucines.jpg?ts=1476266302" alt="Monet - Boulevard Des Capucines">
               </a>
             </div>
             <div class="swiper-slide">
               <a class="thumbSlide" href="#">
-                <img class="thumbSlide_image"
-                  src="https://www.claudemonetgallery.org/thumbnail/98000/98601/mini_small/Terrace-At-The-Seaside,-Sainte-Adresse.jpg?ts=1459229076"
-                  alt="Monet - Terrace at the Seaside, Sainte-Adresse">
+                <img class="thumbSlide_image" src="https://www.claudemonetgallery.org/thumbnail/98000/98601/mini_small/Terrace-At-The-Seaside,-Sainte-Adresse.jpg?ts=1459229076" alt="Monet - Terrace at the Seaside, Sainte-Adresse">
               </a>
             </div>
             <div class="swiper-slide">
               <a class="thumbSlide" href="#">
-                <img class="thumbSlide_image"
-                  src="https://www.claudemonetgallery.org/thumbnail/216000/216772/mini_small/Bathing-At-La-Grenouilliere-1869.jpg?ts=1459229076"
-                  alt="Monet - Bathing at la Grenouilliere 1869">
+                <img class="thumbSlide_image" src="https://www.claudemonetgallery.org/thumbnail/216000/216772/mini_small/Bathing-At-La-Grenouilliere-1869.jpg?ts=1459229076" alt="Monet - Bathing at la Grenouilliere 1869">
               </a>
             </div>
             <div class="swiper-slide">
               <a class="thumbSlide" href="#">
-                <img class="thumbSlide_image"
-                  src="https://www.claudemonetgallery.org/thumbnail/81000/81302/mini_small/The-Magpie.jpg?ts=1459229076"
-                  alt="Monet - The Magpie">
+                <img class="thumbSlide_image" src="https://www.claudemonetgallery.org/thumbnail/81000/81302/mini_small/The-Magpie.jpg?ts=1459229076" alt="Monet - The Magpie">
               </a>
             </div>
             <div class="swiper-slide">
               <a class="thumbSlide" href="#">
-                <img class="thumbSlide_image"
-                  src="https://www.claudemonetgallery.org/thumbnail/80000/80924/mini_small/Jeanne-Marguerite-Lecadre-In-The-Garden.jpg?ts=1459229076"
-                  alt="Monet - Jeanne Marguerite Lecadre In The Garden">
+                <img class="thumbSlide_image" src="https://www.claudemonetgallery.org/thumbnail/80000/80924/mini_small/Jeanne-Marguerite-Lecadre-In-The-Garden.jpg?ts=1459229076" alt="Monet - Jeanne Marguerite Lecadre In The Garden">
               </a>
             </div>
             <div class="swiper-slide">
               <a class="thumbSlide" href="#">
-                <img class="thumbSlide_image"
-                  src="https://www.claudemonetgallery.org/thumbnail/81000/81430/mini_small/The-Tulleries.jpg?ts=1459229076"
-                  alt="Monet - The Tulleries">
+                <img class="thumbSlide_image" src="https://www.claudemonetgallery.org/thumbnail/81000/81430/mini_small/The-Tulleries.jpg?ts=1459229076" alt="Monet - The Tulleries">
               </a>
             </div>
           </div>
