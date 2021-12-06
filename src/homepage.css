@@ -437,85 +437,24 @@ table td {
 /*-----------------------------------------------------*/
 
 
-/*-----------------------------------------------------*/
-/*START: Movies*/
-.Movies h4 {
-  width: 113px;
-  height: 45px;
-
-  border: 3px solid var(--movies);
-  box-sizing: border-box;
-  border-radius: 15px;
-  color: var(--text-white);
-
-  text-align: center;
-  padding-top: 6px;
-
-  margin-bottom: 25px;
-  margin-top: 25px;
-}
-
-.Movies h5 {
-  text-align: left;
-  color: var(--text-white);
-  padding-top: 8px;
-  padding-left: 15px;
-
-  margin-bottom: 25px;
-  margin-top: 25px;
-}
-
-.Movies .Featured_Movies_Row h5 {
-  width: 200px;
-  height: 40px;
-
-  border-top: 2px solid var(--background-purple);
-  border-bottom: 2px solid var(--movies);
-  border-left: : 2px solid var(--movies);
-  border-right: : 2px solid var(--background-purple);
-  box-sizing: border-box;
-  border-radius: 15px;
-}
-
-.Movies .From_Your_Mov_Watchlist_Row h5 {
-  width: 240px;
-  height: 40px;
-
-  border-top: 2px solid var(--background-purple);
-  border-bottom: 2px solid var(--movies);
-  border-left: : 2px solid var(--movies);
-  border-right: : 2px solid var(--background-purple);
-  box-sizing: border-box;
-  border-radius: 15px;
-}
-
-.Movies .Coming_Soon_Row h5 {
-  width: 170px;
-  height: 40px;
-
-  border-top: 2px solid var(--background-purple);
-  border-bottom: 2px solid var(--movies);
-  border-left: : 2px solid var(--movies);
-  border-right: : 2px solid var(--background-purple);
-  box-sizing: border-box;
-  border-radius: 15px;
-}
-
 .swiper {
   max-width: 100%;
-  max-height: 200px;
+  max-height: 550px;
   display: flex;
+  overflow: hidden;
 }
 
 .swiper-wrapper {
-  margin-top: 10px;
-  margin-bottom: 10px;
+  margin-top: 20px;
+  margin-bottom: 20px;
   padding-left: 25px;
+
 }
 
 .swiper-slide img{
-  max-width: 100%;
-  height:auto;
+  object-fit: cover !important;
+  width: 100% !important;
+  max-width: none !important;
   overflow: hidden;
 
   transition: transform 450ms;
@@ -562,42 +501,359 @@ table td {
 
 
 
+/*-----------------------------------------------------*/
+/*START: Movies*/
+.Movies h4 {
+  width: 113px;
+  height: 45px;
 
-
-
-.row_poster {
-  width: 100%;
-  object-fit: contain;
-  max-height: 135px;
-  max-width: 240px;
-  margin-right: 15px;
-  transition: transform 450ms;
-  margin-bottom: 15px;
   border: 3px solid var(--movies);
   box-sizing: border-box;
-  border-radius: 10px;
+  border-radius: 15px;
+  color: var(--text-white);
+
+  text-align: center;
+  padding-top: 6px;
+
+  margin-bottom: 25px;
+  margin-top: 25px;
 }
 
-.row_posters {
+.Movies h5 {
+  text-align: left;
+  color: var(--text-white);
+  padding-top: 8px;
+  padding-left: 15px;
+
+  margin-bottom: 25px;
+  margin-top: 25px;
+}
+
+.Movies .Featured_Movies_Row h5 {
+  width: 185px;
+  height: 40px;
+
+  border-top: 2px solid var(--background-purple);
+  border-bottom: 2px solid var(--movies);
+  border-left: : 2px solid var(--movies);
+  border-right: : 2px solid var(--background-purple);
+  box-sizing: border-box;
+  border-radius: 15px;
+}
+
+.Movies .From_Your_Mov_Watchlist_Row h5 {
+  width: 215px;
+  height: 40px;
+
+  border-top: 2px solid var(--background-purple);
+  border-bottom: 2px solid var(--movies);
+  border-left: : 2px solid var(--movies);
+  border-right: : 2px solid var(--background-purple);
+  box-sizing: border-box;
+  border-radius: 15px;
+}
+
+.Movies .Coming_Soon_Row h5 {
+  width: 155px;
+  height: 40px;
+
+  border-top: 2px solid var(--background-purple);
+  border-bottom: 2px solid var(--movies);
+  border-left: : 2px solid var(--movies);
+  border-right: : 2px solid var(--background-purple);
+  box-sizing: border-box;
+  border-radius: 15px;
+}
+
+.swiper {
+  max-width: 100%;
+  max-height: 550px;
   display: flex;
-  overflow-y: hidden;
-  overflow-x: scroll;
-  padding-top: 20px;
-  padding-left: 10px;
+  overflow: hidden;
 }
 
-.row_poster:hover {
+.swiper-wrapper {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding-left: 25px;
+}
+
+.swiper-slide img{
+  max-width: 100%;
+  max-height: 250px;
+  overflow: hidden;
+
+  transition: transform 450ms;
+  border: 3px solid var(--movies);
+  box-sizing: border-box;
+  border-radius: 5px;
+}
+
+.swiper-slide img:hover {
   transform: scale(1.08);
 }
 
-.row_posters::-webkit-scrollbar {
-  display: none;
+.swiper .swiper-button-prev,
+.swiper .swiper-button-next {
+  height: 100%;
+  width: 2%;
+  width: calc(4%-5px);
+  top: 0;
+  bottom: 0;
+  margin: 0;
+  background-color: rgba(20, 20, 20, 0.5);
+  display: flex;
 }
 
-.row_posterLarge {
-  max-height: 250px;
+.swiper .swiper-button-prev {
+  left: 0;
 }
 
-.row_posterLarge:hover {
-  transform: scale(1.09);
+.swiper .swiper-button-next {
+  right: 0;
+}
+
+.swiper .swiper-button-prev::after,
+.swiper .swiper-button-next::after {
+  color: #fff;
+  font-weight: bold;
+  transition: transform 0.1s ease-out;
+
+  background: none;
+  display: flex;
+
+  transform: scale(0.6);
+}
+
+
+/*TV SERIES*/
+.TV_Series h4 {
+  width: 113px;
+  height: 45px;
+
+  border: 3px solid var(--tvSeries);
+  box-sizing: border-box;
+  border-radius: 15px;
+  color: var(--text-white);
+
+  text-align: center;
+  padding-top: 6px;
+
+  margin-bottom: 25px;
+  margin-top: 100px;
+}
+
+.TV_Series h5 {
+  text-align: left;
+  color: var(--text-white);
+  padding-top: 8px;
+  padding-left: 15px;
+
+  margin-bottom: 25px;
+  margin-top: 25px;
+}
+
+.TV_Series .Featured_TVSeries_Row h5 {
+  width: 205px;
+  height: 40px;
+
+  border-top: 2px solid var(--background-purple);
+  border-bottom: 2px solid var(--tvSeries);
+  border-left: : 2px solid var(--tvSeries);
+  border-right: : 2px solid var(--background-purple);
+  box-sizing: border-box;
+  border-radius: 15px;
+}
+
+.TV_Series .From_Your_TV_Watchlist_Row h5 {
+  width: 215px;
+  height: 40px;
+
+  border-top: 2px solid var(--background-purple);
+  border-bottom: 2px solid var(--tvSeries);
+  border-left: : 2px solid var(--tvSeries);
+  border-right: : 2px solid var(--background-purple);
+  box-sizing: border-box;
+  border-radius: 15px;
+}
+
+.TV_Series .Coming_Soon_Row h5 {
+  width: 155px;
+  height: 40px;
+
+  border-top: 2px solid var(--background-purple);
+  border-bottom: 2px solid var(--tvSeries);
+  border-left: : 2px solid var(--tvSeries);
+  border-right: : 2px solid var(--background-purple);
+  box-sizing: border-box;
+  border-radius: 15px;
+}
+
+
+
+/*MUSIC*/
+.Music h4 {
+  width: 113px;
+  height: 45px;
+
+  border: 3px solid var(--music);
+  box-sizing: border-box;
+  border-radius: 15px;
+  color: var(--text-white);
+
+  text-align: center;
+  padding-top: 6px;
+
+  margin-bottom: 25px;
+  margin-top: 100px;
+}
+
+.Music h5 {
+  text-align: left;
+  color: var(--text-white);
+  padding-top: 8px;
+  padding-left: 15px;
+
+  margin-bottom: 25px;
+  margin-top: 25px;
+}
+
+.Music .From_Your_Liked_Songs_Row h5 {
+  width: 240px;
+  height: 40px;
+
+  border-top: 2px solid var(--background-purple);
+  border-bottom: 2px solid var(--music);
+  border-left: : 2px solid var(--music);
+  border-right: : 2px solid var(--background-purple);
+  box-sizing: border-box;
+  border-radius: 15px;
+}
+
+.Music .caption {
+  margin-top: 10px;
+  padding: 8px 5px;
+  color: #fff;
+  font-size: 14px;
+
+  box-sizing: border-box;
+  border: 1px solid var(--movies);
+  border-radius: 15px;
+}
+
+
+/*BOOKS*/
+.Books h4 {
+  width: 113px;
+  height: 45px;
+
+  border: 3px solid var(--books);
+  box-sizing: border-box;
+  border-radius: 15px;
+  color: var(--text-white);
+
+  text-align: center;
+  padding-top: 6px;
+
+  margin-bottom: 25px;
+  margin-top: 100px;
+}
+
+.Books h5 {
+  text-align: left;
+  color: var(--text-white);
+  padding-top: 8px;
+  padding-left: 15px;
+
+  margin-bottom: 25px;
+  margin-top: 25px;
+}
+
+.Books .Best_Sellers_Row h5 {
+  width: 145px;
+  height: 40px;
+
+  border-top: 2px solid var(--background-purple);
+  border-bottom: 2px solid var(--books);
+  border-left: : 2px solid var(--books);
+  border-right: : 2px solid var(--background-purple);
+  box-sizing: border-box;
+  border-radius: 15px;
+}
+
+.Books .From_Your_Reading_List_Row h5 {
+  width: 245px;
+  height: 40px;
+
+  border-top: 2px solid var(--background-purple);
+  border-bottom: 2px solid var(--books);
+  border-left: : 2px solid var(--books);
+  border-right: : 2px solid var(--background-purple);
+  box-sizing: border-box;
+  border-radius: 15px;
+}
+
+.Books .Featured_Books_Row h5 {
+  width: 180px;
+  height: 40px;
+
+  border-top: 2px solid var(--background-purple);
+  border-bottom: 2px solid var(--books);
+  border-left: : 2px solid var(--books);
+  border-right: : 2px solid var(--background-purple);
+  box-sizing: border-box;
+  border-radius: 15px;
+}
+
+
+
+/*ARTWORKS*/
+.Artworks h4 {
+  width: 113px;
+  height: 45px;
+
+  border: 3px solid var(--artworks);
+  box-sizing: border-box;
+  border-radius: 15px;
+  color: var(--text-white);
+
+  text-align: center;
+  padding-top: 6px;
+
+  margin-bottom: 25px;
+  margin-top: 100px;
+}
+
+.Artworks h5 {
+  text-align: left;
+  color: var(--text-white);
+  padding-top: 8px;
+  padding-left: 15px;
+
+  margin-bottom: 25px;
+  margin-top: 25px;
+}
+
+.Artworks .Daily_Recommendations_Row h5 {
+  width: 255px;
+  height: 40px;
+
+  border-top: 2px solid var(--background-purple);
+  border-bottom: 2px solid var(--artworks);
+  border-left: : 2px solid var(--artworks);
+  border-right: : 2px solid var(--background-purple);
+  box-sizing: border-box;
+  border-radius: 15px;
+}
+
+.Artworks .From_Your_Collection_Row h5 {
+  width: 225px;
+  height: 40px;
+
+  border-top: 2px solid var(--background-purple);
+  border-bottom: 2px solid var(--artworks);
+  border-left: : 2px solid var(--artworks);
+  border-right: : 2px solid var(--background-purple);
+  box-sizing: border-box;
+  border-radius: 15px;
 }
