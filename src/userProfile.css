@@ -188,55 +188,51 @@ nav ul input[type=text] {
 /* END: Customize ScrollBar */
 /*-----------------------------------------------------*/
 
+/*-----------------------------------------------------*/
+/*START: Side Navigation*/
 .Up h3 {
-  margin-top: 7.5vh;
+  margin-top: 8vh;
   --border-width: 4px;
   --border-radius: 20px;
 
   background: var(--gradient);
   padding: 13px 30px;
-
-
   border-style: none;
   position: relative;
   border-radius: var(--border-radius);
   z-index: 1;
-
-  width: 230px;
-  font-size: 24px;
+  width: 200px;
+  font-size: 20px;
   color: #fff;
 }
 
 .Up h3::before {
   content: '';
-
   position: absolute;
-
   display: block;
-
   width: calc(100% - calc(var(--border-width)*2));
   height: calc(100% - calc(var(--border-width)*2));
-
-  background: var(--background-purple);
-
+  background: #3D3647;
   top: var(--border-width);
   left: var(--border-width);
-
   border-radius: calc(var(--border-radius) - var(--border-width));
-
   z-index: -1;
 }
 
 .side_nav {
-  margin-top: -4vh;
-  padding-top: 4vh;
+  margin-top: 3vh;
+  padding-top: 0.85vh;
   position: relative;
-  height: 69vh;
-  width: 226px;
-  box-shadow: 4px 0 0 var(--artworks);
+  height: 62.25vh;
+  width: 200px;
   transition: 0.5s;
   overflow: hidden;
   color: #fff;
+  background: #3D3647;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  border-top-right-radius: 15px;
+  border-top-left-radius: 15px;
 }
 
 .side_nav ul {
@@ -244,22 +240,23 @@ nav ul input[type=text] {
   top: 0;
   left: 0;
   width: 100%;
-
+  background: #3D3647;
+  padding-left: 15px;
 }
 
 .side_nav ul li {
-  padding-top: 2vh;
+  margin-top: 0.5vh;
   list-style: none;
   width: 200%;
-}
-
-.side_nav ul li a:hover {
-  /*background-image: radial-gradient(circle, var(--artworks), var(--books), var(--music), var(--tvSeries), var(--movies));
-  */
-  background-color: var(--artworks);
+  background: #3D3647;
   border-top-left-radius: 20px;
   border-bottom-left-radius: 20px;
-  align-content: center;
+  transition: all 200ms ease-in-out;
+}
+
+.side_nav ul li.active {
+  background: var(--background-purple);
+  padding-left: -10px;
 }
 
 .side_nav ul li a {
@@ -268,17 +265,11 @@ nav ul input[type=text] {
   display: block;
   text-decoration: none;
   color: var(--text-white);
-  padding: 10px 100px 5px 25px;
-
+  padding: 13px 100px 10px 40px;
 }
 
 .side_nav i::before {
   background: transparent;
-}
-
-.side_nav ul li.active {
-  border-top-left-radius: 20px;
-  border-bottom-left-radius: 20px;
 }
 
 .side_nav ul li a .icon {
@@ -286,14 +277,14 @@ nav ul input[type=text] {
   min-width: 60px;
   height: 40px;
   padding-right: 10px;
-margin-left: -10px;
+  margin-left: -35px;
+  padding-left: 15px;
 }
 
 .side_nav ul li a .icon i {
   background: transparent;
-  font-size: 1.65em;
+  font-size: 1.15em;
   z-index: 1;
-
 }
 
 .side_nav ul li a .title {
@@ -302,119 +293,52 @@ margin-left: -10px;
   background: transparent;
   margin-right: 20px;
 }
+/*END: Side Navigation*/
+/*-----------------------------------------------------*/
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*
-.Tab_Container {
-  width: 100%;
-  height: 350px;
-  padding-top: 10vh;
-}
-
-.Up {
-  padding-bottom: 1vh;
-  align-items: center;
-}
-
-.Up, .Button_Container_Up {
+/*-----------------------------------------------------*/
+/*START: Tabs*/
+.Tabs {
   display: flex;
 }
 
-.Tab_Container .Up .Button_Container_Up {
-  flex: 2;
-  margin-left: 8vw;
-  height: 100%;
-  justify-content: space-between;
-}
-
-.Tab_Container .Button_Container_Down {
-  height: 7vh;
-  display: flex;
-  justify-content: space-around;
-  padding-top: 2vh;
-  padding-left: 26vw;
-  padding-right: 4vw;
-}
-
-.Tab_Container .Button_Container_Up .movies_button button,
-.Tab_Container .Button_Container_Down .tvSeries_button button,
-.Tab_Container .Button_Container_Up .music_button button,
-.Tab_Container .Button_Container_Down .books_button button,
-.Tab_Container .Button_Container_Up .artworks_button button {
-  width: 10vw;
-  height: 45px;
-  float:left;
-  border-radius: 15px;
-  color: #fff;
-  cursor: pointer;
-}
-
-.Tab_Container .Button_Container_Up .movies_button button {
-  border: 2px solid var(--movies);
-  background-image: none;
-}
-
-.Tab_Container .Button_Container_Down .tvSeries_button button {
-  border: 2px solid var(--tvSeries);
-}
-
-.Tab_Container .Button_Container_Up .music_button button {
-  border: 2px solid var(--music);
-}
-
-.Tab_Container .Button_Container_Down .books_button button {
-  border: 2px solid var(--books);
-}
-
-.Tab_Container .Button_Container_Up .artworks_button button {
-  border: 2px solid var(--artworks);
-}
-
-.Tab_Container .Button_Container_Up .movies_button button:hover {
-  background-image: linear-gradient(to right, var(--movies), var(--background-purple));
-}
-
-.Tab_Container .Button_Container_Down .tvSeries_button button:hover {
-  background-image: linear-gradient(to right, var(--tvSeries), var(--background-purple));
-}
-
-.Tab_Container .Button_Container_Up .music_button button:hover {
-  background-image: linear-gradient(to right, var(--music), var(--background-purple));
-}
-
-.Tab_Container .Button_Container_Down .books_button button:hover {
-  background-image: linear-gradient(to right, var(--books), var(--background-purple));
-}
-
-.Tab_Container .Button_Container_Up .artworks_button button:hover {
-  background-image: linear-gradient(to right, var(--artworks), var(--background-purple));
-}
-
-.Gradient_Line {
-  margin-top: 5vh;
+.Tabs .tab-content{
+  flex: 1;
   position: relative;
-  width: 100%;
-  height: 3px;
-  background-image: linear-gradient(to right, var(--movies) ,
-   var(--tvSeries), var(--music), var(--books), var(--artworks));
-  margin-top: 7px;
+  margin: 0vh 5vw 0vh 5vw;
 }
-*/
+
+.Tabs .tab-content > div {
+  position: absolute;
+  opacity: 0;
+}
+
+.Tabs .tab-content > div.active {
+  top: 5.5vh;
+  left: 20px;
+  opacity: 1;
+  transition: opacity 400ms ease-in-out 85ms;
+}
+
+.Tabs .tab-content hr {
+  width: 72.5vw;
+  margin-bottom: 5vh;
+}
+/*END: Tabs*/
+/*-----------------------------------------------------*/
+
+
+/*START: Accounts Tab*/
+/*-----------------------------------------------------*/
+.users-accounts li {
+  list-style: none;
+  padding-bottom: 4vh;
+  font-size: 1.25em;
+}
+
+.users-accounts li i {
+  padding-right: 10px;
+}
+/*END: Accounts Tab*/
+/*-----------------------------------------------------*/
