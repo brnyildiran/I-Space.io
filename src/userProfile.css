@@ -14,6 +14,8 @@
   --books: #A03ADB;
   --artworks: #FF4FA2;
 
+  --gradient: linear-gradient(to right, var(--movies), var(--tvSeries), var(--music), var(--books), var(--artworks));
+
 }
 *,
 *::before,
@@ -78,10 +80,6 @@ nav {
 
 a {
   text-decoration: none;
-}
-
-ul {
-  list-style-type: none;
 }
 
 nav ul a {
@@ -189,3 +187,234 @@ nav ul input[type=text] {
 }
 /* END: Customize ScrollBar */
 /*-----------------------------------------------------*/
+
+.Up h3 {
+  margin-top: 7.5vh;
+  --border-width: 4px;
+  --border-radius: 20px;
+
+  background: var(--gradient);
+  padding: 13px 30px;
+
+
+  border-style: none;
+  position: relative;
+  border-radius: var(--border-radius);
+  z-index: 1;
+
+  width: 230px;
+  font-size: 24px;
+  color: #fff;
+}
+
+.Up h3::before {
+  content: '';
+
+  position: absolute;
+
+  display: block;
+
+  width: calc(100% - calc(var(--border-width)*2));
+  height: calc(100% - calc(var(--border-width)*2));
+
+  background: var(--background-purple);
+
+  top: var(--border-width);
+  left: var(--border-width);
+
+  border-radius: calc(var(--border-radius) - var(--border-width));
+
+  z-index: -1;
+}
+
+.side_nav {
+  margin-top: -4vh;
+  padding-top: 4vh;
+  position: relative;
+  height: 69vh;
+  width: 226px;
+  box-shadow: 4px 0 0 var(--artworks);
+  transition: 0.5s;
+  overflow: hidden;
+  color: #fff;
+}
+
+.side_nav ul {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+
+}
+
+.side_nav ul li {
+  padding-top: 2vh;
+  list-style: none;
+  width: 200%;
+}
+
+.side_nav ul li a:hover {
+  /*background-image: radial-gradient(circle, var(--artworks), var(--books), var(--music), var(--tvSeries), var(--movies));
+  */
+  background-color: var(--artworks);
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+  align-content: center;
+}
+
+.side_nav ul li a {
+  background: transparent;
+  width: 100%;
+  display: block;
+  text-decoration: none;
+  color: var(--text-white);
+  padding: 10px 100px 5px 25px;
+
+}
+
+.side_nav i::before {
+  background: transparent;
+}
+
+.side_nav ul li.active {
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+}
+
+.side_nav ul li a .icon {
+  background: transparent;
+  min-width: 60px;
+  height: 40px;
+  padding-right: 10px;
+margin-left: -10px;
+}
+
+.side_nav ul li a .icon i {
+  background: transparent;
+  font-size: 1.65em;
+  z-index: 1;
+
+}
+
+.side_nav ul li a .title {
+  padding-left: 10px;
+  font-size: 18px;
+  background: transparent;
+  margin-right: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+.Tab_Container {
+  width: 100%;
+  height: 350px;
+  padding-top: 10vh;
+}
+
+.Up {
+  padding-bottom: 1vh;
+  align-items: center;
+}
+
+.Up, .Button_Container_Up {
+  display: flex;
+}
+
+.Tab_Container .Up .Button_Container_Up {
+  flex: 2;
+  margin-left: 8vw;
+  height: 100%;
+  justify-content: space-between;
+}
+
+.Tab_Container .Button_Container_Down {
+  height: 7vh;
+  display: flex;
+  justify-content: space-around;
+  padding-top: 2vh;
+  padding-left: 26vw;
+  padding-right: 4vw;
+}
+
+.Tab_Container .Button_Container_Up .movies_button button,
+.Tab_Container .Button_Container_Down .tvSeries_button button,
+.Tab_Container .Button_Container_Up .music_button button,
+.Tab_Container .Button_Container_Down .books_button button,
+.Tab_Container .Button_Container_Up .artworks_button button {
+  width: 10vw;
+  height: 45px;
+  float:left;
+  border-radius: 15px;
+  color: #fff;
+  cursor: pointer;
+}
+
+.Tab_Container .Button_Container_Up .movies_button button {
+  border: 2px solid var(--movies);
+  background-image: none;
+}
+
+.Tab_Container .Button_Container_Down .tvSeries_button button {
+  border: 2px solid var(--tvSeries);
+}
+
+.Tab_Container .Button_Container_Up .music_button button {
+  border: 2px solid var(--music);
+}
+
+.Tab_Container .Button_Container_Down .books_button button {
+  border: 2px solid var(--books);
+}
+
+.Tab_Container .Button_Container_Up .artworks_button button {
+  border: 2px solid var(--artworks);
+}
+
+.Tab_Container .Button_Container_Up .movies_button button:hover {
+  background-image: linear-gradient(to right, var(--movies), var(--background-purple));
+}
+
+.Tab_Container .Button_Container_Down .tvSeries_button button:hover {
+  background-image: linear-gradient(to right, var(--tvSeries), var(--background-purple));
+}
+
+.Tab_Container .Button_Container_Up .music_button button:hover {
+  background-image: linear-gradient(to right, var(--music), var(--background-purple));
+}
+
+.Tab_Container .Button_Container_Down .books_button button:hover {
+  background-image: linear-gradient(to right, var(--books), var(--background-purple));
+}
+
+.Tab_Container .Button_Container_Up .artworks_button button:hover {
+  background-image: linear-gradient(to right, var(--artworks), var(--background-purple));
+}
+
+.Gradient_Line {
+  margin-top: 5vh;
+  position: relative;
+  width: 100%;
+  height: 3px;
+  background-image: linear-gradient(to right, var(--movies) ,
+   var(--tvSeries), var(--music), var(--books), var(--artworks));
+  margin-top: 7px;
+}
+*/
