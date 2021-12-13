@@ -32,113 +32,313 @@ session_start();
     }
 ?>
 
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
 
-<html>
-    <head>
-        <meta charset='utf-8'>
-        <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-        <meta name='viewport' content='width=device-width, initial-scale=1'>
-        
-        <title>I-Space | Log in</title>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Sans&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
 
-    </head>
-    <style>
-        
-        #bar{
+<style>
+@import "https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css";
+:root {
+  --background-purple: #1B1227;
+  --text-gray: #BFCBCD;
+  --text-white: #FFFFFF;
+  --blue-highlight: #66FFF6;
+  --button-highlight: #2E4D5B;
+  --light-blue: #A7C6FF;
+  --black: #000000;
+}
+*,
+*::before,
+*::after {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  background-color: #1B1227;
+}
 
-            height: 100px;
-            /*background-color: rgb(59,89,152);*/
-            background-color: #1B1227;
-            color: #d9dfeb;
-            padding: 4px;
-        }
-        
-        
-        #signup_button{
+body {
+  font-family: 'Fira Sans', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  color: #BFCBCD;
+  text-decoration: none;
+}
 
-            /*background-color: #42b72a;*/
-            background-color: #1B1227;
-            width: 70px;
-            text-align: center;
-            padding: 8px;
-            border-radius: 4px;
-            margin-top: -20px;
-            float: right;
-            border: 3px solid #66FFF6;
-            box-sizing: border-box;
-            border-radius: 10px;
-        }
+header {
+  display: flex;
+  width: 100%;
+  height: 10vh;
+  margin: auto;
+  align-items: center;
+  justify-content: space-between;
+}
 
-        #bar2{
+.Container_Log {
+  width: 100%;
+  min-height: 100vh;
+  min-width: 100vw;
+  padding-left: 3.3%;
+  padding-right: 3.7%;
+  padding-top: 28px;
+  padding-bottom: 28px;
+  box-sizing: border-box;
+  overflow: hidden;
+}
 
-            /*background-color: white;*/ 
-            background-color: #1B1227;
-            width: 450px; 
-            margin:auto; 
-            margin-top: 75px;
-            padding: 10px;
-            padding-top: 50px;
-            text-align: center;
-            font-weight: bold;
-            color: white;
-            border: 3px solid #66FFF6;
-            box-sizing: border-box;
-            border-radius: 10px;
-        }
+.Logo_Container_Log, .Nav_Links_Log {
+  display: flex;
+}
 
-        #text{
+.Logo_Container_Log{
+  flex: 1;
+  padding-top: 17px;
+}
 
-            height: 40px;
-            width: 300px;
-            border-radius: 4px;
-            border: solid 1px #ccc;
-            padding: 4px;
-            font-size: 14px;
-            color: #BFCBCD;
-        }
+.Logo_Container_Log img {
+  width: 220px;
+  height: auto;
+  max-width: 120%;
 
-        #button{
+  transform: scale(0.91);
+}
 
-            width: 300px;
-            height: 40px;
-            border-radius: 4px;
-            border: none;
-            background-color: #2E4D5B;
-            color: #BFCBCD;
-        }
+.Nav_Links_Log {
+  flex: 1;
+  justify-content: flex-end;
+}
 
-        #logo {
-            position: absolute;
-            width: 190px;
-            height: 65px;
-            left: 80px;
-            top: 50px;
-            padding-left: rewind;
-        }
+a {
+  text-decoration: none;
+}
 
-    </style>
+ul {
+  list-style-type: none;
+}
+
+nav ul li a {
+  float:left;
+  width: 95px;
+  padding: 5px;
+
+  color: var(--text-white);
+  border: 3px solid var(--blue-highlight);
+  border-radius: 10px;
+  text-align: center;
+  font-size: 14px;
+
+  transform: scale(0.91);
+}
+
+
+.RegisterTop {
+  margin-right: 10px;
+}
+
+form{
+  width: 100%;
+  height: 80vh;
+  margin: auto;
+  margin-top: 100px;
+
+  width: 300px;
+  height: 200px;
+  border: 2px solid var(--blue-highlight);
+  box-sizing: border-box;
+  border-radius: 15px;
+
+  transform: scale(0.91);
+}
+
+.Login_Box {
+  margin: auto;
+  padding-top: 17vh;
+}
+
+.Login_Box h1 {
+  width: 59px;
+  height: 23px;
+  margin: 20px 20px 15px 20px;
+  font-size: 24px;
+  line-height: 29px;
+  border-top-left-radius: 50px;
+}
+
+.Login_Line {
+  margin: 15px 20px 25px 25px;
+  border: 1px solid var(--blue-highlight);
+  opacity: 100%;
+}
+
+.Log_Username_Field h1 {
+  width: 59px;
+  height: 23px;
+  margin: 20px 22px 15px 22px;
+  font-size: 24px;
+  line-height: 29px;
+  border-top-left-radius: 50px;
+}
+
+.Log_Username_Field,
+.Log_Password_Field {
+  width: 256px;
+  height: 32px;
+  padding: 5px 44px 15px 44px;
+  margin: 20px 22px;
+  text-align: center;
+  background: var(--light-blue);
+  border-radius: 10px;
+  text-align:left;
+}
+
+.Log_Username_Field input,
+.Log_Password_Field input {
+  border: none;
+  outline: none;
+  background: none;
+}
+
+i::before {
+  background: transparent;
+}
+
+.Log_Username_Field i,
+.Log_Password_Field i {
+  float: left;
+  margin-left: -28px;
+  margin-top: 3px;
+  text-align: center;
+  background: none;
+  color: var(--background-purple);
+  outline: none;
+  border: none;
+}
+
+.Login_Buttons{
+  width: 100%;
+  display: flex;
+  margin-top: 45px;
+}
+
+.Login_Buttons li a {
+  font-size: 14px;
+  line-height: 9px;
+  color: var(--text-white);
+
+  background: var(--button-highlight);
+  border: 3px solid var(--blue-highlight);
+  border-radius: 10px;
+  text-align: center;
+}
+.register_Button {
+  width: 85px;
+  height: 32px;
+  padding: 9px;
+  margin-left: 180px;
+  cursor: pointer;
+}
+
+.submit_Button {
+  width: 85px;
+  height: 32px;
+  padding: 9px;
+  margin-left: 15px;
+  cursor: pointer;
+}
+
+.forgetMyPassword_Button {
+  width: 200px;
+  height: 32px;
+  padding: 9px;
+  cursor: pointer;
+  margin-left: -34px;
+}
+
+::placeholder {
+  color: var(--background-purple);
+  font-family: 'Fira Sans', sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  background-color: var(--light-blue);
+  border-color: var(--light-blue)
+}
+
+#button{
+
+width: 150px;
+height: 35px;
+border-radius: 4px;
+border: none;
+background-color: #2E4D5B;
+color: #BFCBCD;
+border-color: var(--light-blue);
+margin-left: 10px;
+}
+
+#button2{
+
+width: 150px;
+height: 35px;
+border-radius: 4px;
+border: none;
+background-color: #2E4D5B;
+color: #BFCBCD;
+border-color: var(--light-blue);
+margin-left: -38px;
+}
+
+
+
+</style>
+
+    
     <body style="font-family: tahoma;background-color: #1B1227;;">
         
-        <header>
-        <div class="logo">
-            <img src="images/I-SPACE_Logo.png" alt="Logo">
-        </div>
-        </header>
-        <div id="bar">
-                <div style="font-size: 40px;"></div>
-                <div id="signup_button">Signup</div>
+    <header>
+      <div class="Logo_Container_Log">
+        <img class="logo" src="images\I-SPACE_Logo.png" alt="logo">
+      </div>
+      <nav>
+        <ul class="Nav_Links_Log">
+          <li><a class="RegisterTop" href="register.html">Register</a></li>
+          <li><a class="LoginTop" href="login.html">Login</a></li>
+        </ul>
+      </nav>
+    </header>
+        
+        <div id="Login_Box">
 
-        </div>
-        <div id="bar2">
-    
             <form method = "post">
 
-                Log in to I-Space <br><br>
+                <h1>Login</h1>
+                <hr class="Login_Line">
 
+                <div class="Log_Username_Field">
+                <i class="fa fa-user fa-lg" aria-hidden="true"></i>
                 <input name="email" value="<?php echo $email ?>" type="text" id="text" placeholder="Email"><br><br>
-                <input name="password" value="<?php echo $password ?>" type="password" id="text" placeholder="Password"><br><br>
+                </div>
 
-                <input type="submit" id="button" value="Log in">
+
+
+                <div class="Log_Password_Field">
+                <i class="fa fa-lock fa-lg" aria-hidden="true"></i>
+                <input name="password" value="<?php echo $password ?>" type="password" id="text" placeholder="Password"><br><br>
+                </div>
+
+                
+                <ul class="Login_Buttons">
+                <li><input href="#" class="submit_Button" type="submit" id="button2" value="Forget my password"></li>
+                <li><input href="#" class="submit_Button" type="submit" id="button" value="Log in"></li>
+                </ul>
+
                 <br><br>
 
             </form>
