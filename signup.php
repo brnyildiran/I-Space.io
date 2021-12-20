@@ -34,119 +34,308 @@
 ?>
 
 
-<html>
-    <head>
-        <meta charset='utf-8'>
-        <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-        <meta name='viewport' content='width=device-width, initial-scale=1'>
-        
-        <title>I-Space | Signup</title>
 
-    </head>
-    <style>
-        
-        #bar{
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
 
-            height: 100px;
-            /*background-color: rgb(59,89,152);*/
-            background-color: #1B1227;
-            color: #d9dfeb;
-            /*padding: 4px;*/
-        }
-        
-        
-        #signup_button{
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Register</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Sans&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
 
-            background-color: #42b72a;
-            width: 70px;
-            text-align: center;
-            padding: 4px;
-            border-radius: 4px;
-            float: right;
-        }
+<style>
+@import "https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css";
+:root {
+  --background-purple: #1B1227;
+  --text-gray: #BFCBCD;
+  --text-white: #FFFFFF;
+  --blue-highlight: #66FFF6;
+  --button-highlight: #2E4D5B;
+  --light-blue: #A7C6FF;
+  --black: #000000;
+}
+*,
+*::before,
+*::after {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  background-color: #1B1227;
+}
 
-        #bar2{
+body {
+  font-family: 'Fira Sans', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  color: #BFCBCD;
+  text-decoration: none;
+}
 
-            /*background-color: white;*/ 
-            background-color: #1B1227;
-            width: 450px; 
-            margin:auto; 
-            margin-top: 0px;
-            /*margin-top: 75px;*/
-            padding: 10px;
-            padding-top: 50px;
-            text-align: center;
-            font-weight: bold;
-            border: 3px solid #66FFF6;
-            box-sizing: border-box;
-            border-radius: 10px;
-        }
+header {
+  display: flex;
+  width: 100%;
+  height: 10vh;
+  margin: auto;
+  align-items: center;
+  justify-content: space-between;
+}
 
-        #text{
+.Container_Reg {
+  width: 100%;
+  min-height: 100vh;
+  min-width: 100vw;
+  padding-left: 4%;
+  padding-right: 4%;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  box-sizing: border-box;
+  overflow: hidden;
+}
 
-            height: 40px;
-            width: 300px;
-            border-radius: 4px;
-            border: solid 1px #ccc;
-            padding: 4px;
-            font-size: 14px;
-            color: #BFCBCD;
-        }
+.Logo_Container_Reg, .Nav_Links_Reg {
+  display: flex;
+}
 
-        #button{
+.Logo_Container_Reg{
+  flex: 1;
+  padding-top: 20px;
+}
 
-            width: 300px;
-            height: 40px;
-            border-radius: 4px;
-            border: none;
-            /*background-color: rgb(59,89,152);*/
-            background-color: #2E4D5B;
-            color: #BFCBCD;
-        }
+.Logo_Container_Reg img {
+  width: 220px;
+  height: auto;
+  max-width: 120%;
+}
 
-        #logo {
-            position: absolute;
-            width: 190px;
-            height: 65px;
-            left: 80px;
-            top: 50px;
-            padding-left: rewind;
-        }
+.Nav_Links_Reg{
+  flex: 1;
+  justify-content: flex-end;
+}
 
-    </style>
-    <body style="font-family: tahoma;background-color: #1B1227;">
-        
-        <header>
-        <div class="logo">
-            <img src="images/I-SPACE_Logo.png" alt="Logo">
-        </div>
-        </header>
-        <div id="bar">
-                <div style="font-size: 40px;"></div>
-                <div id="signup_button">Log in</div>
+a {
+  text-decoration: none;
+}
 
-        </div>
-        <div id="bar2">
-    
-            <div style="color:#BFCBCD;">Sign up to I-Space </div>
-            <br><br>
+ul {
+  list-style-type: none;
+}
 
-            <form method ="post" action = "signup.php">
+nav ul li a {
+  float:left;
+  width: 95px;
+  padding: 5px;
 
-                <input value = "<?php echo $first_name ?>" name="first_name" type="text" id="text" placeholder="First name"><br><br>
-                <input value = "<?php echo $last_name ?>" name="last_name" type="text" id="text" placeholder="Last name"><br><br>
+  color: var(--text-white);
+  border: 3px solid var(--blue-highlight);
+  border-radius: 10px;
+  text-align: center;
+  font-size: 14px;
+}
 
-                <input value = "<?php echo $email ?>" name="email" type="text" id="text" placeholder="Email"><br><br>
-                
-                <input  name="password" type="password" id="text" placeholder="Password"><br><br>
-                <input name="password2" type="password" id="text" placeholder="Retype Password"><br><br>
+.RegisterTop {
+  margin-right: 20px;
+}
 
-                <input type="submit" id="button" value="Sign up">
-                <br><br>
+form{
+  width: 100%;
+  height: 80vh;
+  margin: auto;
 
-            </form>
+  width: 300px;
+  height: 500px;
+  border: 2px solid var(--blue-highlight);
+  box-sizing: border-box;
+  border-radius: 15px;
+}
 
-        </div>
-    </body>
+.Register_Box {
+  margin: auto;
+  padding-top: 12vh;
+}
 
+.Register_Box h1 {
+  width: 59px;
+  height: 23px;
+  margin: 20px 22px 15px 22px;
+  font-size: 24px;
+  line-height: 29px;
+  border-top-left-radius: 50px;
+}
+.Register_Box h6 {
+  margin: 20px 22px -15px 22px;
+  font-size: 14px;
+}
+
+.Register_Line {
+  margin: 15px 22px 25px 22px;
+  border: 1px solid var(--blue-highlight);
+  opacity: 100%;
+}
+
+.Reg_Username_Field h1 {
+  width: 59px;
+  height: 23px;
+  margin: 20px 22px 15px 22px;
+  font-size: 24px;
+  line-height: 29px;
+  border-top-left-radius: 50px;
+}
+
+.Reg_Username_Field,
+.Reg_Email_Field,
+.Reg_Password_Field,
+.Reg_ConfPass_Field {
+  width: 256px;
+  height: 32px;
+  padding: 5px 44px 15px 44px;
+  margin: 20px 22px;
+  text-align: center;
+  background: var(--light-blue);
+  border-radius: 10px;
+  text-align:left;
+}
+
+.Reg_Username_Field input,
+.Reg_Email_Field input,
+.Reg_Password_Field input,
+.Reg_ConfPass_Field input{
+  border: none;
+  outline: none;
+  background: none;
+}
+
+i::before {
+  background: transparent;
+}
+
+.Reg_Username_Field i,
+.Reg_Email_Field i,
+.Reg_Password_Field i,
+.Reg_ConfPass_Field i {
+  float: left;
+  margin-left: -28px;
+  margin-top: 3px;
+  text-align: center;
+  background: none;
+  color: var(--background-purple);
+  outline: none;
+  border: none;
+}
+
+.Reg_Button{
+  width: 100%;
+  display: flex;
+  margin-top: 10px;
+}
+
+.Reg_Button li a {
+  font-size: 14px;
+  line-height: 9px;
+  color: var(--text-white);
+
+  background: var(--button-highlight);
+  border: 3px solid var(--blue-highlight);
+  border-radius: 10px;
+  text-align: center;
+}
+.register_Button {
+  width: 85px;
+  height: 32px;
+  padding: 9px;
+  margin-left: 180px;
+  cursor: pointer;
+}
+
+::placeholder {
+  color: var(--background-purple);
+  font-family: 'Fira Sans', sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  background-color: var(--light-blue);
+  border-color: var(--light-blue)
+}
+
+#button{
+
+width: 150px;
+height: 35px;
+border-radius: 4px;
+border: none;
+background-color: #2E4D5B;
+color: #BFCBCD;
+border-color: var(--light-blue);
+margin-left: 90px;
+margin-top: -15px;
+}
+
+</style>
+
+<body>
+
+  <div class="Container_Reg">
+    <header>
+      <div class="Logo_Container_Reg">
+        <img class="logo" src="images\I-SPACE_Logo.png" alt="logo">
+      </div>
+      <nav>
+        <ul class="Nav_Links_Reg">
+          <li><a class="RegisterTop" href="signup.php">Register</a></li>
+          <li><a class="LoginTop" href="login.php">Login</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <div class="Register_Box">
+        <form method ="post" action = "signup.php">
+            <h1>Register</h1>
+            <hr class="Register_Line">
+
+            
+
+            <h6>Firstname</h6>
+            <div class="Reg_Username_Field">
+            <i class="fa fa-user fa-lg" aria-hidden="true"></i>
+            <input value = "<?php echo $first_name ?>" name="first_name" type="text" id="text" placeholder="First name">
+            </div>
+
+
+            <h6>Lastname</h6>
+            <div class="Reg_Username_Field">
+            <i class="fa fa-user fa-lg" aria-hidden="true"></i>
+            <input value = "<?php echo $last_name ?>" name="last_name" type="text" id="text" placeholder="Last name">
+            </div>
+
+            <h6>Email</h6>
+            <div class="Reg_Email_Field">
+            <i class="fa fa-envelope fa-lg" aria-hidden="true"></i>
+            <input value = "<?php echo $email ?>" name="email" type="text" id="text" placeholder="Email">
+            </div>
+
+            <h6>Password</h6>
+            <div class="Reg_Password_Field">
+            <i class="fa fa-key fa-lg" aria-hidden="true"></i>
+            <input  name="password" type="password" id="text" placeholder="Password">
+            </div>
+
+            <h6>Confirm Password</h6>
+            <div class="Reg_ConfPass_Field">
+            <i class="fa fa-key fa-lg" aria-hidden="true"></i>
+            <input name="password2" type="password" id="text" placeholder="Retype Password">
+            </div>
+
+            
+            <ul class="Reg_Button">
+            <li><input type="submit" id="button" value="Sign up"></li>
+            </ul>
+        </form>
+      
+    </div>
+
+  </div>
+</body>
 </html>

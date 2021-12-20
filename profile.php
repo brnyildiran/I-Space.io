@@ -39,6 +39,9 @@
         header("Location: login.php");
         die;    
     }
+
+    print_r($user_data);
+
     // posting start here
 
     if($_SERVER['REQUEST_METHOD'] == "POST")
@@ -449,17 +452,19 @@ nav ul input[type=text] {
       </div>
       <nav>
         <ul class="Nav_Links">
-          <a class="MoviesTop" href="homepage.html#movies">Movies</a>
-          <a class="TVSeriesTop" href="homepage.html#tvSeries">TV Series</a>
-          <a class="MusicTop" href="homepage.html#music">Music</a>
-          <a class="BooksTop" href="homepage.html#books">Books</a>
-          <a class="ArtworksTop" href="homepage.html#artworks">Artworks</a>
+          <a class="MoviesTop" href="homepage.php">Movies</a>
+          <a class="TVSeriesTop" href="homepage.php">TV Series</a>
+          <a class="MusicTop" href="hhomepage.php">Music</a>
+          <a class="BooksTop" href="homepage.php">Books</a>
+          <a class="ArtworksTop" href="homepage.php">Artworks</a>
           <input type="text" placeholder="Search..">
         </ul>
       </nav>
       <div class="Nav_Profile">
-        <a class="Profile" href="userProfile.html"><img src="images/USER.png" alt="profile_picture" style="max-width:56px"></a>
-        <h5>Hi, Berna</h5>
+        <span>
+          <a class="Profile" href="homepage.php"><img src="images/sinan.jpg" alt="profile_picture" style="max-width:56px"></a>
+        </span>
+        <h5><?php echo  $user_data['first_name'] . " " . $user_data['last_name']?></h5>
       </div>
     </header>
     <!-- Navigation Bar Section End -->
@@ -468,7 +473,7 @@ nav ul input[type=text] {
     <!-- ---------------------------------------------------------------------------- -->
     <!-- START: Tabs -->
     <div class="Up">
-      <h3>Berna's Space</h3>
+      <h3> <?php echo  $user_data['first_name'] . "'s Space" ?> </h3>
     </div>
 
     <div class="Tabs">
@@ -540,22 +545,22 @@ nav ul input[type=text] {
           <div class="users-accounts">
             <li href="#">
               <span class="account-icon"><i class="fa fa-imdb"></i></span>
-              <span class="account-username">brnyildiran</span>
+              <span class="account-username">IMDB: SnnKaya</span>
             </li>
 
             <li href="#">
               <span class="account-icon"><i class="fa fa-spotify"></i></span>
-              <span class="account-username">brnyildiran</span>
+              <span class="account-username">spotify: SnnKaya</span>
             </li>
 
             <li href="#">
               <span class="account-icon"><i class="fab fa-goodreads"></i></span>
-              <span class="account-username">brnyildiran</span>
+              <span class="account-username">GSuit: SnnKaya</span>
             </li>
 
             <li href="#">
               <span class="account-icon"><i class="fab fa-google"></i></span>
-              <span class="account-username">brnyildiran</span>
+              <span class="account-username">Google: SnnKaya</span>
             </li>
           </div>
         </div>

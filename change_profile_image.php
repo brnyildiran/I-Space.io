@@ -1,3 +1,18 @@
+<?php 
+
+    session_start();
+
+    include("classes/connect.php");
+    include("classes/login.php");
+    include("classes/user.php");
+    include("classes/post.php");
+
+    $login = new Login();
+    $user_data = $login->check_login($_SESSION['mybook_userid']);
+
+
+?>
+
 <!DOCTYPE html>
 <html>
     <head>
@@ -138,59 +153,7 @@
                     </div>
                 </div>
 
-                <!--friends area-->
-                <div style="min-height: 400px; flex: 2.5; padding: 20px; padding-right: 0px;">
-
-                    <div style="border:solid thin #aaa; padding:10px; background-color: white;">
-
-                        <textarea placeholder="Whats on your mind?"></textarea>
-                        <input id="post_button" type="submit" value="Post">
-                        <br>
-                    </div>
-
-                    <!--posts-->
-                    <div id="post_bar">
-
-                        <!--post 1-->
-                        <div id="post">
-                            <div>
-                                <img src="user1.jpg" style="width: 75px; margin-right: 4px;">
-                            </div>
-                            <div>
-                                <div style="font-weight: bold;color: 405d9b;">First Guy</div>
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo ab necessitatibus earum similique vero eos soluta sequi, in pariatur odit est sed ad dolor exercitationem minus ex tempore facilis quis!
-                                <br><br>
-                                <a href="">Like</a> . <a href="">Comment</a> . <span style="color: #999;">April 23 2021</span> 
-                            </div>
-                        </div>
-                        <!--post 2-->
-                        <div id="post">
-                            <div>
-                                <img src="user4.jpg" style="width: 75px; margin-right: 4px;">
-                            </div>
-                            <div>
-                                <div style="font-weight: bold;color: 405d9b;">Fourth Guy</div>
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo ab necessitatibus earum similique vero eos soluta sequi, in pariatur odit est sed ad dolor exercitationem minus ex tempore facilis quis!
-                                <br><br>
-                                <a href="">Like</a> . <a href="">Comment</a> . <span style="color: #999;">April 23 2021</span> 
-                            </div>
-                        </div>
-                        <!--post 3-->
-                        <div id="post">
-                            <div>
-                                <img src="user2.jpg" style="width: 75px; margin-right: 4px;">
-                            </div>
-                            <div>
-                                <div style="font-weight: bold;color: 405d9b;">Second Guy</div>
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo ab necessitatibus earum similique vero eos soluta sequi, in pariatur odit est sed ad dolor exercitationem minus ex tempore facilis quis!
-                                <br><br>
-                                <a href="">Like</a> . <a href="">Comment</a> . <span style="color: #999;">April 23 2021</span> 
-                            </div>
-                        </div>
-
-                        
-                    </div>
-                </div>
+                
             </div>
         </div>  
     </body>

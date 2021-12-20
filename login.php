@@ -308,8 +308,8 @@ margin-left: -38px;
       </div>
       <nav>
         <ul class="Nav_Links_Log">
-          <li><a class="RegisterTop" href="register.html">Register</a></li>
-          <li><a class="LoginTop" href="login.html">Login</a></li>
+          <li><a class="RegisterTop" href="signup.php">Register</a></li>
+          <li><a class="LoginTop" href="login.php">Login</a></li>
         </ul>
       </nav>
     </header>
@@ -342,7 +342,7 @@ margin-left: -38px;
                 <br><br>
 
             </form>
-
+          
         </div>
     </body>
 
